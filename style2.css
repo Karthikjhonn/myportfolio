@@ -1,5 +1,5 @@
 *{
-    color: white;
+    color: white ;
     background-color: black;
     box-sizing: border-box;
     margin: 0;
@@ -28,6 +28,10 @@ header{
     transition: all .8s ;
     filter: blur(3px);
     transform: translateX(-100%);
+}
+.t-w{
+    color: white !important;
+    background-color: black !important;
 }
 .show{
     opacity: 1;
