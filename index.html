@@ -82,7 +82,8 @@
         </div>
         <div class="container mx-auto xl:px-28 hide">
             <p class="text-start px-2 lg:py-4  py-0 text-black-200">
-                Hi there,<br> Welcome to my portfolio! I am <mark class="px-1">KARTHICK</mark> a passionate frontend developer with a keen eye for
+                Hi there,<br> Welcome to my portfolio! I am <mark class="px-1">KARTHICK</mark> a passionate frontend
+                developer with a keen eye for
                 design and a strong proficiency for creating engaging user experiences. With a solid foundation in HTML,
                 CSS, and JavaScript, I specialize in crafting clean, responsive, and Work closely with UX
                 designers to create visually appealing and intuitive user interfaces, ranging from simple static
@@ -176,6 +177,9 @@
             <li
                 class="border border-green-600 px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
                 ANGULAR15</li>
+            <li
+                class="border border-green-600 px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                JAVA</li>
             <li
                 class="border border-green-600 px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
                 NODE JS</li>
@@ -432,7 +436,8 @@
                     class="w-full" alt="WhatsApp Qr code"></div>
         </div>
         <center>
-            <p class="bg-gray-50 py-2 text-[14px] mt-12 px-1 text-black t-w">Thank you for visiting my portfolio, <br> I look forward
+            <p class="bg-gray-50 py-2 text-[14px] mt-12 px-1 text-black t-w">Thank you for visiting my portfolio, <br> I
+                look forward
                 to the opportunity to work with you and contribute to creating exceptional digital experiences.
             </p>
         </center>
@@ -440,66 +445,10 @@
     <!-- footer -->
     <footer class="bg-black p-4">
         <center class="bg-black text-white py-4">All copyrights received Designed & Developed by <a
-            href="https://github.com/Karthikjhonn" class="bg-black text-blue-600">Karthik</a></center>
+                href="https://github.com/Karthikjhonn" class="bg-black text-blue-600">Karthik</a></center>
     </footer>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-
-    <script>
-        function darkMode() {
-            if (confirm("Do you want to change the theme?")) {
-                if (document.querySelector("head link").getAttribute('href') == "style1.css") {
-                    document.querySelector("head link").setAttribute('href', "style2.css")
-                } else if (document.querySelector("head link").getAttribute('href') == "style2.css") {
-                    document.querySelector("head link").setAttribute('href', "style1.css")
-                }
-            }
-        }
-
-        // small screen devices navbar
-        function collapse() {
-            document.querySelector("#collapse").classList.toggle("hidden")
-        }
-
-        document.querySelector("#collapse").addEventListener("click", () => {
-            if (document.querySelector("#collapse") != "hidden") {
-                document.querySelector("#collapse").classList.add("hidden")
-            }
-        })
-        // stickybar
-        document.addEventListener("scroll", () => {
-            var pageOffset = window.pageYOffset
-            if (pageOffset > 150) {
-                document.querySelector("header").classList.add("shadow-lg")
-                if (pageOffset > 1900) {
-                    document.querySelector("#stickybar").classList.add("!right-0")
-                } else {
-                    document.querySelector("#stickybar").classList.remove("!right-0")
-                }
-            } else {
-                document.querySelector("header").classList.remove("shadow-lg")
-            }
-
-        })
-
-
-        // Show And hide 
-        const observe = new IntersectionObserver((entries) => {
-            console.log(entries);
-            entries.forEach((data) => {
-                if (data.isIntersecting) {
-                    data.target.classList.add('show')
-                } else {
-                    data.target.classList.remove('show')
-
-                }
-            })
-        })
-        let hideEl = document.querySelectorAll(".hide");
-        hideEl.forEach((el) => observe.observe(el))
-
-
-
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
