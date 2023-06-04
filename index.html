@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="color-scheme" content="light">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +15,15 @@
 
     <header class=" bg-gray-50  xl:px-28">
         <nav class="flex justify-between container mx-auto p-4 bg-gray-50">
-            <span style="cursor: pointer;" class="lg:hidden bg-gray-50 ease-linear" onclick="collapse()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd" />
-                </svg>
-            </span>
+            <!-- menu bar icon -->
+                <span style="cursor: pointer;" class="bg-gray-50 ease-linear lg:hidden" onclick="collapse()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <!-- nav links  -->
             <div class="bg-gray-50">
                 <ul class=" hidden lg:flex  bg-gray-50">
                     <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
@@ -49,13 +52,20 @@
                             href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="bg-gray-50">
-                <button onclick="darkMode()">
+            <!-- Darkmode button -->
+            <div>
+            <div class="bg-gray-50 flex items-center gap-2">
+                <button onclick="darkMode()" class="text-black hover:scale-110 duration-100">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
                         stroke="currentColor" class="w-8 h-8 p-1 rounded-full">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                     </svg></button>
+                <a href="https://github.com/Karthikjhonn" class="hover:scale-110 duration-100"><button class="bg-orange-500 rounded-full p-[2px]">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
+                            class="w-[25px] rounded-full " alt="GitHub">
+                    </button></a>
+            </div>
             </div>
         </nav>
     </header>
@@ -67,20 +77,20 @@
         </div>
     </section>
     <!-- about -->
-    <section id="about ">
+    <section id="about">
         <center class="text-2xl font-semi-bold pb-6 decoration-2 decoration-orange-600 underline hide">About Me</center>
         <div
-            class="lg:flex justify-center container mx-auto  items-center xl:px-28 xl:py-28 py-16 text-center lg:text-start hide">
+            class="xl:flex justify-center container mx-auto  items-center xl:py-28 py-16 text-center xl:text-start hide">
             <h1 class="lg:text-5xl w-full text-2xl font-semibold">KARTHICK <br><span
                     class="inline-block typed-out lg:text-5xl text-2xl font-semibold">FRONTEND <span
-                        class="text-orange-600">ANGULAR</span> DEVELOPER</span></h1>
+                        class="text-orange-600 inline-block">ANGULAR</span> DEVELOPER</span></h1>
             <p class="lg:text-2xl w-full text-black font-thin bg-slate-50 p-4 mt-4 lg:mt-0 hover:bg-slate-100">To secure
                 a position
                 as a Frontend Developer in a
                 dynamic and progressive organization
                 where I can apply my technical and creative skills to help the company achieve its goal.</p>
         </div>
-        <div class="container mx-auto xl:px-28 hide">
+        <div class="container mx-auto  hide">
             <p class="text-start px-2 lg:py-4  py-0 text-black-200">
                 Hi there,<br> Welcome to my portfolio! I am <mark class="px-1">KARTHICK</mark> a passionate frontend
                 developer with a keen eye for
@@ -97,22 +107,22 @@
     <div id="stickybar"
         class="bg-orange-500 text-white inline-block px-2 py-2 fixed z-[450] right-[-250px]  duration-700 top-[40%]">
         <div class="flex-col bg-orange-500">
-            <div class="my-4 bg-inherit  hover:scale-110 duration-100">
+            <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
                 <a href="tel:8056179854">
                     <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png?w=740&t=st=1685365616~exp=1685366216~hmac=2fdaa5b591f6e0081421b9a3e628220b606703835d8f747ff881b58d5aeddc80"
-                        alt="phone" class="w-[25px] rounded p-[2px]">
+                        alt="phone" class="w-[30px] rounded p-[2px]">
                 </a>
             </div>
-            <div class="my-4 bg-inherit hover:scale-110 duration-100">
+            <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
                 <a href="mailto:karthickyamkk2001@gmail.com">
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png?w=740&t=st=1685365462~exp=1685366062~hmac=c3644c84cb0ff6d8fc7819d072afcc12141063e712045118bfac0d97dfc6d960"
-                        alt="gmail" class="w-[25px] rounded p-1">
+                        alt="gmail" class="w-[30px] rounded p-1">
                 </a>
             </div>
-            <div class="my-4 bg-inherit hover:scale-110 duration-100">
+            <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
                 <a href="https://wa.me/+918056179854">
                     <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png?w=740&t=st=1685365202~exp=1685365802~hmac=3dd317a14293e9fac59e02578d15c3a20f0f79bf64c739977ace577794457865"
-                        alt="WhatsApp" class="w-[25px] rounded p-1">
+                        alt="WhatsApp" class="w-[30px] rounded p-1">
                 </a>
             </div>
         </div>
@@ -195,7 +205,7 @@
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
                     <span
-                        class="w-[96%] bg-orange-400 inline-block px-2 rounded-3xl font-semibold text-amber-100">HTML5</span>
+                        class="w-[96%] bg-orange-400 inline-block px-2 rounded-3xl font-semibold text-orange-200">HTML5</span>
                 </li>
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
@@ -210,7 +220,7 @@
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
                     <span
-                        class="w-[90%] bg-fuchsia-400 inline-block px-2 rounded-3xl font-semibold text-fuchsia-600">Bootstrap5</span>
+                        class="w-[90%] bg-[#C780FA] inline-block px-2 rounded-3xl font-semibold text-indigo-50">Bootstrap5</span>
                 </li>
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
@@ -224,6 +234,11 @@
                 </li>
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
+                    <span
+                        class="w-[75%] bg-[#1D267D] inline-block px-2 rounded-3xl font-semibold text-cyan-50">Java</span>
+                </li>
+                <li
+                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
                     <span class="w-[79%] bg-green-400 inline-block px-2 rounded-3xl font-semibold text-green-100">Node
                         Js</span>
                 </li>
@@ -231,6 +246,11 @@
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
                     <span
                         class="w-[91%] bg-cyan-600 inline-block px-2 rounded-3xl font-semibold text-cyan-50">TypeScript</span>
+                </li>
+                <li
+                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
+                    <span
+                        class="w-[91%] bg-[#C1D0B5] inline-block px-2 rounded-3xl font-semibold text-stone-100">My SQL</span>
                 </li>
             </ul>
         </div>
@@ -408,31 +428,31 @@
             <div class=" pt-32 px-2">
                 <ul class="my-8  hover:translate-x-1 ease-in duration-200">
                     <a href="tel:8056179854" class="underline text-blue-600 flex gap-2 text-xl items-center">
-                        <li class="bg-orange-500 rounded-sm p-[4px]">
+                        <li class="bg-orange-500  rounded-sm p-[5px]">
                             <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png?w=740&t=st=1685365616~exp=1685366216~hmac=2fdaa5b591f6e0081421b9a3e628220b606703835d8f747ff881b58d5aeddc80"
-                                alt="phone" class="w-[25px]  p-[2px]">
+                                alt="phone" class="w-[35px]  bg-black px-1 py-1 ">
                         </li>91+xxxxxxx
                     </a>
                 </ul>
                 <ul class="my-8 hover:translate-x-1 ease-in duration-200">
                     <a href="https://wa.me/+918056179854"
                         class="underline text-blue-600 flex gap-2 text-xl items-center">
-                        <li class="bg-orange-500 rounded-sm p-[4px]"><img
+                        <li class="bg-orange-500 rounded-sm p-[5px]"><img
                                 src="https://cdn-icons-png.flaticon.com/512/733/733585.png?w=740&t=st=1685366704~exp=1685367304~hmac=7e7a7c1eb8162e59e0d5de33bdfb578a464eb8c0ae91318861ff1ef61735898e"
-                                alt="WhatsApp" class="w-[25px] p-1"></li>91+xxxxxxx
+                                alt="WhatsApp" class="w-[35px]  bg-black px-1 py-1"></li>91+xxxxxxx
                     </a>
                 </ul>
-                <ul class="my-8 hover:translate-x-1 ease-in duration-200">
+                <ul class="my-8  hover:translate-x-1 ease-in duration-200">
                     <a href="mailto:karthickyamkk2001@gmail.com"
                         class="text-blue-600 flex underline gap-2 text-xl items-center">
-                        <li class="bg-orange-500 rounded-sm p-[4px]"><img
+                        <li class="bg-orange-500 rounded-sm p-[5px]"><img
                                 src="https://cdn-icons-png.flaticon.com/512/732/732200.png?w=740&t=st=1685365462~exp=1685366062~hmac=c3644c84cb0ff6d8fc7819d072afcc12141063e712045118bfac0d97dfc6d960"
-                                alt="Gmail" class="w-[25px]  p-1"></li>kar********@gmail.com
+                                alt="Gmail" class="w-[35px]  bg-black px-1 py-[2px]"></li>kar********@gmail.com
                     </a>
                 </ul>
             </div>
             <!-- <h1 class="text-6xl text-slate-100 px-2">Feel Free To Ca!!</h1> -->
-            <div class="max-w-[200px] bg-orange-500 p-4 mx-auto lg:block hidden "><img src="img/wa.me.png"
+            <div class="max-w-[200px] bg-orange-500 p-2 mx-auto lg:block hidden "><img src="img/wa.me.png"
                     class="w-full" alt="WhatsApp Qr code"></div>
         </div>
         <center>

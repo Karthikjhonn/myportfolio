@@ -1,10 +1,11 @@
 function darkMode() {
+    var darkColor=document.querySelector("meta").content
     if (confirm("Do you want to change the theme?")) {
-        if (document.querySelector("head link").getAttribute('href') == "style1.css") {
-            document.querySelector("head link").setAttribute('href', "style2.css")
-        } else if (document.querySelector("head link").getAttribute('href') == "style2.css") {
-            document.querySelector("head link").setAttribute('href', "style1.css")
-        }
+        if (darkColor=="light") {
+            document.querySelector("meta").content="dark"
+        } else{
+            document.querySelector("meta").content="light"     
+           }
     }
 }
 
@@ -37,7 +38,7 @@ document.addEventListener("scroll", () => {
 
 // Show And hide 
 const observe = new IntersectionObserver((entries) => {
-    console.log(entries);
+    // console.log(entries);
     entries.forEach((data) => {
         if (data.isIntersecting) {
             data.target.classList.add('show')
