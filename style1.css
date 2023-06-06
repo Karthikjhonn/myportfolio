@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 section{
-    padding: 6rem 4px;
+    padding: 6rem 1px 0 1px;
 }
 header{
     position: sticky;
@@ -31,7 +31,7 @@ mark,mark b{
     filter: blur(0);
     transform: translateX(0);
 }
-
+/* Type Animations */
 .typed-out{
     overflow: hidden;
     border-right: .15em solid orange;
@@ -48,12 +48,12 @@ mark,mark b{
     from { border-color: transparent }
     to { border-color: orange; }
   }
-
+  /* carousel */
   .carousel {
     position: relative;
     height:auto;
     width: 100%;
-    max-width:750px;
+    max-width:800px;
     margin: auto;    
   }
   .carousel .carousel-item{
