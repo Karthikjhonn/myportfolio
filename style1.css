@@ -48,3 +48,46 @@ mark,mark b{
     from { border-color: transparent }
     to { border-color: orange; }
   }
+
+  .carousel {
+    position: relative;
+    height:auto;
+    width: 100%;
+    max-width:750px;
+    margin: auto;    
+  }
+  .carousel .carousel-item{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carousel-item img{
+      width: 100%;
+      height: 100%;
+  }
+  .carousel .carousel-item.active {
+    display: block;
+  }
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.09);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 45px;
+    font-size:25px;
+  }
+  .carousel button:hover{
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+  .carousel button.prev {
+    left: 0px;
+  }
+  .carousel button.next {
+    right: 0px;
+  }
