@@ -1,3 +1,4 @@
+// dark mode 
 function darkMode() {
     var darkColor=document.querySelector("meta").content
     if (confirm("Do you want to change the theme?")) {
@@ -77,4 +78,16 @@ function prevSlide() {
   }
   showSlide(slideIndex);
 }
-setInterval(nextSlide, 4000);
+
+var myClearInterval;
+function mySetInterval(){
+    this.myClearInterval=setInterval(nextSlide, 2000);
+}
+mySetInterval()
+function mouseEnter(){
+    clearInterval(myClearInterval)
+}
+function mouseLeave(){
+    mySetInterval()
+}
+

@@ -78,7 +78,7 @@
         </div>
     </section>
     <!-- about -->
-    <section id="about" class="container mx-auto 2xl:px-24 ">
+    <section id="about" class="container mx-auto 2xl:px-24">
         <center class="text-2xl font-semi-bold pb-6 decoration-2 decoration-orange-600 underline hide">About Me</center>
         <div class="xl:flex justify-center items-center text-center xl:text-start hide">
             <h1 class="lg:text-5xl w-full text-2xl font-semibold">KARTHICK <br><span
@@ -258,7 +258,7 @@
     <!-- Services -->
     <section id="services" class="container mx-auto 2xl:px-24 hide">
         <center class="text-2xl font-semi-bold pb-6 decoration-2 decoration-orange-600 underline">PROJECTS</center>
-        <div class="carousel">
+        <div class="carousel" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
             <!--item - 1-->
             <div class="carousel-item active">
                 <div class="w-full h-full   mx-auto  pb-6 border border-grey-400 rounded shadow-lg">
@@ -416,23 +416,29 @@
                                 alt="Gmail" class="w-[35px]  bg-black px-1 py-[2px]"></li>kar********@gmail.com
                     </a>
                 </ul>
+                <ul class="my-8  hover:translate-x-1 ease-in duration-200">
+                    <a href="https://github.com/Karthikjhonn"
+                        class="text-blue-600 flex underline gap-2 text-xl items-center">
+                        <li class="bg-orange-500 rounded-sm p-[5px]"><img
+                                src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
+                                alt="Github" class="w-[35px]  bg-black px-1 py-[1px] rounded"></li>GitHub
+                    </a>
+                </ul>
             </div>
             <!-- <h1 class="text-6xl text-slate-100 px-2">Feel Free To Ca!!</h1> -->
-            <div class="max-w-[200px] bg-orange-500 p-2 lg:block hidden "><img src="img/wa.me.png"
+            <div class="max-w-[200px] bg-orange-500 p-2 lg:block hidden transition ease-in hover:scale-110 duration-300"><img src="img/wa.me.png"
                     class="w-full" alt="WhatsApp Qr code"></div>
         </div>
-        <center>
-            <p class="bg-gray-50 py-2 mb-8 text-[14px] mt-12 px-1 text-black t-w">Thank you for visiting my portfolio, <br> I
+            <p class="bg-gray-50 py-2 mb-8 text-[14px] mt-12 px-1 text-black text-center">Thank you for visiting my portfolio, <br> I
                 look forward
                 to the opportunity to work with you and contribute to creating exceptional digital experiences.
             </p>
-        </center>
     </section>
     <!-- footer -->
-    <footer class="bg-black p-4">
-        <center class="bg-black text-white py-4">All copyrights received Designed & Developed by <a
-                href="https://github.com/Karthikjhonn" class="bg-black text-blue-600">Karthik</a>
-        </center>
+    <footer class="bg-black text-white p-4">
+        <p class="bg- text-center py-4">All &#xa9; copyrights received Designed & Developed by <a
+                href="https://github.com/Karthikjhonn" class="bg- text-blue-600 underline">Karthik</a>
+        </p>
     </footer>
     <script src="index.js"></script>
 </body>
