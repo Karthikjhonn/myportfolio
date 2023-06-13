@@ -12,12 +12,12 @@
 </head>
 
 <body class="relative">
-
+    <!-- Navigation Bar  -->
     <header class=" bg-gray-50  xl:px-28">
         <nav class="flex justify-between container mx-auto p-4 bg-gray-50">
             <!-- menu bar icon -->
             <span style="cursor: pointer;" class="bg-gray-50 ease-linear lg:hidden" onclick="collapse()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="black">
                     <path fill-rule="evenodd"
                         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                         clip-rule="evenodd" />
@@ -70,11 +70,14 @@
             </div>
         </nav>
     </header>
-    <section class="flex justify-center  hide">
-        <div class="bg-red-600 p-0 rounded h-[450px] overflow-hidden">
-            <img class="w-full"
+    <!-- cover page  -->
+    <section class="container mx-auto 2xl:px-24 p-0 h-[90vh] hide">
+        <div class=" rounded w-full lg:w-1/2 h-full mx-auto">
+            <!-- <img class="w-full"
                 src="https://img.freepik.com/free-vector/one-happy-boy-with-green-backpack_1308-69184.jpg?size=626&ext=jpg&ga=GA1.1.1806938554.1670917907&semt=ais"
-                alt="Profile.jpg">
+                alt="Profile.jpg"> -->
+            <img src="img/Black and White Monoline Typedriven Portfolio Cover e Page (1).gif " alt="img"
+                class="w-full h-full">
         </div>
     </section>
     <!-- about -->
@@ -143,9 +146,8 @@
                 <li>SSLC State board :</li>
                 <p>SLMHSS Thiruvallur, 2017.</p>
             </ul>
-            <p class="bg-red-50 p-2 text-red-600 font-semibold lg:w-3/4">NOTE : I would like to add one more thing that
-                I
-                am a Self Learner Everything What I
+            <p class="bg-red-50 p-2 text-red-600 font-semibold lg:w-3/4">NOTE : I would like to add one more thing that 
+                 Everything What I
                 learned and practiced with my own interest,I have gain some experience through my<a href="#services"
                     class="text-blue-600 underline bg-red-50 px-2">projects</a>Which I practiced while learning these
                 Technology's Here I want to mention this clearly All projects Source code are uploaded in my <a
@@ -198,6 +200,9 @@
                 EXPRESS JS</li>
             <li
                 class="border border-green-600 px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                GIT & GITHUB</li>
+            <li
+                class="border border-green-600 px-4 py-2 rounded-lg hover:bg-green-600 hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
                 MY SQL</li>
         </ul>
         <div class=" container mx-auto xl:px-28 pt-12 max-w-5xl px-2 hide">
@@ -235,17 +240,17 @@
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
                     <span
+                        class="w-[91%] bg-cyan-600 inline-block px-2 rounded-3xl font-semibold text-cyan-50">TypeScript</span>
+                </li>
+                <li
+                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
+                    <span
                         class="w-[75%] bg-[#1D267D] inline-block px-2 rounded-3xl font-semibold text-cyan-50">Java</span>
                 </li>
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
                     <span class="w-[79%] bg-green-400 inline-block px-2 rounded-3xl font-semibold text-green-100">Node
                         Js</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[91%] bg-cyan-600 inline-block px-2 rounded-3xl font-semibold text-cyan-50">TypeScript</span>
                 </li>
                 <li
                     class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
@@ -391,7 +396,7 @@
     <section id="contact" class="container mx-auto 2xl:px-24 hide">
         <center class="text-2xl font-semi-bold pb-6 decoration-2 decoration-orange-600 underline">Contact Me</center>
         <div class="lg:flex lg:justify-center lg:gap-96 lg:items-center px-4 md:px-0">
-            <div >
+            <div>
                 <ul class="my-8  hover:translate-x-1 ease-in duration-200">
                     <a href="tel:8056179854" class="underline text-blue-600 flex gap-2 text-xl items-center">
                         <li class="bg-orange-500  rounded-sm p-[5px]">
@@ -426,13 +431,15 @@
                 </ul>
             </div>
             <!-- <h1 class="text-6xl text-slate-100 px-2">Feel Free To Ca!!</h1> -->
-            <div class="max-w-[200px] bg-orange-500 p-2 lg:block hidden transition ease-in hover:scale-110 duration-300"><img src="img/wa.me.png"
-                    class="w-full" alt="WhatsApp Qr code"></div>
+            <div
+                class="max-w-[200px] bg-orange-500 p-2 lg:block hidden transition ease-in hover:scale-110 duration-300">
+                <img src="img/wa.me.png" class="w-full" alt="WhatsApp Qr code"></div>
         </div>
-            <p class="bg-gray-50 py-2 mb-8 text-[14px] mt-12 px-1 text-black text-center">Thank you for visiting my portfolio, <br> I
-                look forward
-                to the opportunity to work with you and contribute to creating exceptional digital experiences.
-            </p>
+        <p class="bg-gray-50 py-2 mb-8 text-[14px] mt-12 px-1 text-black text-center">Thank you for visiting my
+            portfolio, <br> I
+            look forward
+            to the opportunity to work with you and contribute to creating exceptional digital experiences.
+        </p>
     </section>
     <!-- footer -->
     <footer class="bg-black text-white p-4">
