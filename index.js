@@ -12,8 +12,12 @@ function darkMode() {
 
 // small screen devices navbar
 function collapse() {
-    document.querySelector("#collapse").classList.toggle("hidden")
+    document.querySelector("#collapse").classList.toggle("top-[100%]")
 }
+document.querySelector("#collapse").addEventListener("click", () => {
+    document.querySelector("#collapse").classList.remove("top-[100%]");
+})
+
 
 // stickybar
 document.addEventListener("scroll", () => {
