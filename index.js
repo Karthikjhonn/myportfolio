@@ -15,11 +15,6 @@ function collapse() {
     document.querySelector("#collapse").classList.toggle("hidden")
 }
 
-document.querySelector("#collapse").addEventListener("click", () => {
-    if (document.querySelector("#collapse") != "hidden") {
-        document.querySelector("#collapse").classList.add("hidden")
-    }
-})
 // stickybar
 document.addEventListener("scroll", () => {
     var pageOffset = window.pageYOffset
