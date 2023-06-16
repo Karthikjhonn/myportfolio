@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 section{
-    padding: 6rem 1px 0 1px;
+    padding: 6rem 0 0 0;
 }
 header{
     position: sticky;
