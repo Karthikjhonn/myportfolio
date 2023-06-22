@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,100;1,300&family=Poppins:wght@300;600&display=swap');
 section{
     padding: 6rem 0 0 0;
 }
@@ -15,6 +18,23 @@ header{
 }
 .active{
     color: blue !important;
+}
+.title{
+  position: relative;
+  font-weight: 600;
+  display: inline-block !important;
+}
+.title span{
+  color: orangered;
+}
+.title::after{
+  content: "";
+  position: absolute;
+  top:100%;
+  left: 0;
+  border: 2px solid orangered;
+  width: 70%;
+  border-radius: 10px;
 }
 mark,mark b{
     background-color: rgba(255, 242, 0,.9);
