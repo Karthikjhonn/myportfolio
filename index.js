@@ -12,10 +12,10 @@ function darkMode() {
 
 // small screen devices navbar
 function collapse() {
-    document.querySelector("#collapse").classList.toggle("-translate-y-[200%]")
+    document.querySelector("#collapse").classList.toggle("translate-y-[0]")
 }
 document.querySelector("#collapse").addEventListener("click", () => {
-    document.querySelector("#collapse").classList.add("-translate-y-[200%]");
+    document.querySelector("#collapse").classList.remove("translate-y-[0]");
 })
 
 
