@@ -13,7 +13,7 @@ section{
 header{
     position: sticky;
     top:0;
-    max-height: 10vh !important;
+    min-height: 10vh !important;
     z-index: 2425;
 }
 .active{
@@ -25,7 +25,7 @@ header{
   display: inline-block !important;
 }
 .title span{
-  color: orangered;
+  color: #ff4500;
 }
 .title::after{
   content: "";
@@ -54,7 +54,7 @@ mark,mark b{
 /* Type Animations */
 .typed-out{
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid orangered;
     white-space: nowrap;
     animation: 
       typing 3.5s  alternate-reverse 2s infinite  forwards,
@@ -66,7 +66,7 @@ mark,mark b{
   }
 @keyframes blink {
     from { border-color: transparent }
-    to { border-color: orange; }
+    to { border-color: orangered; }
   }
   /* carousel */
   .carousel {
