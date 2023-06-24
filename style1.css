@@ -13,7 +13,7 @@ section{
 header{
     position: sticky;
     top:0;
-    min-height: 10vh !important;
+    margin: auto;
     z-index: 2425;
 }
 .active{
