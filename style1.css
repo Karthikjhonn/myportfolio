@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,100;1,300&family=Poppins:wght@300;600&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Noto Sans', sans-serif;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,100;1,300&family=Poppins:wght@300;600&display=swap');
 section{
     padding: 6rem 0 0 0;
 }
