@@ -90,3 +90,14 @@ function mouseLeave(){
     mySetInterval()
 }
 
+// preloader 
+var loader = document.getElementById("preloader")
+const showPageElm = document.getElementById("showPage")
+window.addEventListener("load",()=>{
+    setTimeout(showPage,1500)
+})
+
+const showPage =()=>{
+    loader.style.display="none";
+    showPageElm.classList.add("!block")
+}

@@ -10,6 +10,28 @@
 section{
     padding: 6rem 0 0 0;
 }
+.spin{
+  animation: spin 2s  infinite linear;
+}
+.line{
+  animation: line 2s infinite ease-in-out;
+}
+/* spin  */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes line {
+  0%   {width:0%}
+  25%  {width:25%;}
+  50%  {width:50%;}
+  75%  {width:75%;}
+  100% {width:100%;}
+}
 header{
     position: sticky;
     top:0;
