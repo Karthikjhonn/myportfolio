@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="relative ">
+<body class="relative">
     <!-- preloader  -->
     <div id="preloader" class="bg-[#FFD80D] w-full h-[100vh] relative z-[2852] fixed">
         <div class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex items-center flex-col justify-center gap-2  p-2">
@@ -20,568 +20,575 @@
         </div>      
     </div>
     <div id="showPage" class="hidden">
-    <!-- Navigation Bar  -->
-    <header class="bg-gray-50 2xl:px-24">
-        <div class="flex xl:container xl:mx-auto justify-between items-center p-4 w-full bg-gray-50">
-            <!-- logo -->
-            <a href="#">
-                <div class="w-[100px] h-[50px]">
-                    <img src="img/logo.png" alt="logo" class="w-full h-full">
-                </div>
-            </a>
-            <div class="flex items-center">
-                <!-- nav links  -->
-                <nav class="bg-gray-50">
-                    <ul class=" hidden lg:flex  bg-gray-50">
-                        <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#about">About</a></li>
-                        <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#resume">Resume</a></li>
-                        <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#skills">Skills</a></li>
-                        <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#services">Services</a></li>
-                        <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="figma.html">Figma</a></li>
-                        <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- mobile devices -->
-                    <ul class=" lg:hidden bg-gray-50 w-full h-auto left-0 absolute top-[100%] -translate-y-[200%] transition-all ease-in-out duration-300 z-[-50] shadow-lg"
-                        id="collapse">
-                        <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#about">About</a></li>
-                        <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#resume">Resume</a></li>
-                        <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#skills">Skills</a></li>
-                        <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#services">Services</a></li>
-                        <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="figma.html">Figma</a></li>
-                        <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
-                                href="#contact">Contact</a></li>
-                        <li
-                            class="px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline">
-                            <div class="bg-gray-50 flex justify-center items-center gap-4">
-                                <button onclick="darkMode()"
-                                    class="text-black hover:scale-110 duration-100 rounded border border-slate-200 px-6 py-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2.5" stroke="currentColor"
-                                        class="w-8 h-8 p-1 rounded-full mx-auto">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                                    </svg></button>
-                                <a href="https://github.com/Karthikjhonn" class="hover:scale-110 duration-100 ">
-                                    <button class=" rounded border border-slate-200 px-6 py-1 ">
-                                        <img src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
-                                            class="w-[30px] rounded-full mx-auto" alt="GitHub">
-                                    </button></a>
-                            </div>
-                        </li>
-
-                    </ul>
-                </nav>
-                <!-- Darkmode button -->
-                <div class="hidden lg:block">
-                    <div class="bg-gray-50 flex items-center gap-2">
-                        <button onclick="darkMode()" class="text-black hover:scale-110 duration-100">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                                stroke="currentColor" class="w-8 h-8 p-1 rounded-full">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                            </svg></button>
-                        <a href="https://github.com/Karthikjhonn" class="hover:scale-110 duration-100"><button
-                                class="bg-orange-500 rounded-full p-[2px]">
-                                <img src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
-                                    class="w-[25px] rounded-full " alt="GitHub">
-                            </button></a>
+        <!-- Navigation Bar  -->
+        <header class="bg-gray-50 2xl:px-24">
+            <div class="flex xl:container xl:mx-auto justify-between items-center p-4 w-full bg-gray-50">
+                <!-- logo -->
+                <a href="#">
+                    <div class="w-[100px] h-[50px]">
+                        <img src="img/logo.png" alt="logo" class="w-full h-full object-contain">
                     </div>
+                </a>
+                <div class="flex items-center">
+                    <!-- nav links  -->
+                    <nav class="bg-gray-50">
+                        <ul class=" hidden lg:flex  bg-gray-50">
+                            <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#about">About</a></li>
+                            <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#resume">Resume</a></li>
+                            <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#skills">Skills</a></li>
+                            <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#services">Services</a></li>
+                            <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="figma.html">Figma</a></li>
+                            <li><a class="bg-gray-50 px-3 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#contact">Contact</a>
+                            </li>
+
+                        </ul>
+                        <!-- mobile devices -->
+                        <ul class=" lg:hidden bg-gray-50 w-full h-auto left-0 absolute top-[100%] -translate-y-[200%] transition-all ease-in-out duration-300 z-[-50] shadow-lg"
+                            id="collapse">
+                            <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#about">About</a></li>
+                            <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#resume">Resume</a></li>
+                            <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#skills">Skills</a></li>
+                            <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#services">Services</a></li>
+                            <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="figma.html">Figma</a></li>
+                            <li><a class="border-b border-zinc-100 px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline"
+                                    href="#contact">Contact</a></li>
+                            <li
+                                class="px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline">
+                                <div class="bg-gray-50 flex justify-end items-center gap-4">
+                                    <button onclick="darkMode()"
+                                        class="text-black hover:scale-110 duration-100 rounded border border-slate-200 px-6 py-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2.5" stroke="currentColor"
+                                            class="w-8 h-8 p-1 rounded-full mx-auto">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                                        </svg></button>
+                                    <a href="https://github.com/Karthikjhonn" class="hover:scale-110 duration-100 ">
+                                        <button class=" rounded border border-slate-200 px-6 py-1 ">
+                                            <img src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
+                                                class="w-[30px] rounded-full mx-auto" alt="GitHub">
+                                        </button></a>
+                                        <a class="text-white px-2 py-2 block bg-orange-500 rounded hover:scale-110 duration-100"
+                                        href="#contact">Hire Me</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- Darkmode button -->
+                    <div class="hidden lg:block">
+                        <div class="bg-gray-50 flex items-center gap-3">
+                            <button onclick="darkMode()" class="text-black hover:scale-110 duration-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="2.5" stroke="currentColor" class="w-8 h-8 p-1 rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                                </svg></button>
+                            <a href="https://github.com/Karthikjhonn" class="hover:scale-110 duration-100"><button
+                                    class="bg-orange-500 rounded-full p-[2px]">
+                                    <img src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
+                                        class="w-[25px] rounded-full " alt="GitHub">
+                                </button></a>
+                                <a class="text-white px-2 py-2 block bg-orange-500 rounded hover:scale-110 duration-100"
+                                href="#contact">Hire Me</a>
+                        </div>
+                    </div>
+                    <!-- menu bar icon -->
+                    <span style="cursor: pointer;" class="ease-linear lg:hidden p-4" onclick="collapse()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="black">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
                 </div>
-                <!-- menu bar icon -->
-                <span style="cursor: pointer;" class="ease-linear lg:hidden p-4" onclick="collapse()">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="black">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </span>
             </div>
-        </div>
-    </header>
-    <!-- cover page  -->
-    <section class="p-0 h-[90vh] hide">
-        <div class=" rounded w-full h-full mx-auto !bg-[#383d45]">
-            <!-- <img src="img/coverpagelarge.gif" alt="portfolio cover page" class="w-auto mx-auto h-full hidden md:block">
+        </header>
+        <!-- cover page  -->
+        <section class="p-0 h-[90vh] hide">
+            <div class="w-full h-full mx-auto !bg-[#ffd80d]">
+                <!-- <img src="img/coverpagelarge.gif" alt="portfolio cover page" class="w-auto mx-auto h-full hidden md:block">
             <img src="img/coverpagesmall.gif" alt="portfolio cover page" class="w-auto mx-auto h-full md:hidden"> -->
-            <img src="img/coverpage-larg1.png" alt="portfolio cover page" class="w-full mx-auto h-full hidden md:block">
-            <img src="img/coverpage-small.png" alt="portfolio cover page" class="w-full mx-auto h-full md:hidden">
-        </div>
-    </section>
-    <!-- about -->
-    <section id="about" class="container mx-auto 2xl:px-24">
-        <center class="text-2xl font-semi-bold  hide my-8">
-            <h1 class="title"><span>A</span>bout Me</h1>
-        </center>
-        <div class="xl:flex justify-center items-center text-center xl:text-start hide">
-            <h1 class="lg:text-5xl w-full text-2xl font-semibold">KARTHICK <br><span
-                    class="inline-block typed-out lg:text-5xl text-2xl font-semibold">FRONTEND <span
-                        class="text-orange-600 inline-block">ANGULAR</span> DEV</span></h1>
-            <p
-                class="lg:text-2xl rounded-md w-full text-black font-thin bg-slate-50 p-4 mt-4 lg:mt-0 hover:bg-slate-100">
-                To secure
-                a position
-                as a Frontend Developer in a
-                dynamic and progressive organization
-                where I can apply my technical and creative skills to help the company achieve its goal.</p>
-        </div>
-        <p class="text-lg px-2 xl:px-0 lg:pt-16 py-8 lg:py-0 text-black-200 hide">
-            Hi there,<br> Welcome to my portfolio! I am <span class="px-1 font-semibold">KARTHICK</span> a passionate
-            frontend
-            developer with a keen eye for
-            design and a strong proficiency for creating engaging user experiences. With a solid foundation in <b> HTML,
-                CSS,Tailwindcss and JavaScript, Angular Framework, </b> specialize in crafting clean, responsive, and
-            Work closely with UX
-            designers to create visually appealing and intuitive user interfaces, ranging from simple static
-            websites to complex web applications and single page application.Within my portfolio, you will
-            find a collection of <a href="#services" class="text-blue-600 underline">projects</a> that highlight my
-            expertise in frontend development. From responsive layouts to interactive components, each project
-            showcases my attention to detail and commitment to delivering exceptional results.<br>Proficiency in<b
-                class="rounded-[2px] mx-1 bg-red-50 text-red-500"> ANGULAR </b>that involved developing dynamic web SPA
-            applications using Angular. I am well-versed in Angular concepts, such as components, modules, services, and
-            routing, reactive module form, directives, HTTP client & observables<mark>.</mark>
-        </p>
-    </section>
-    <!-- sticky bar -->
-    <div id="stickybar"
-        class="bg-orange-500 text-white inline-block px-2 py-2 fixed z-[450] right-[-250px]  duration-700 top-[40%]">
-        <div class="flex-col bg-orange-500">
-            <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
-                <a href="tel:8056179854">
-                    <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png?w=740&t=st=1685365616~exp=1685366216~hmac=2fdaa5b591f6e0081421b9a3e628220b606703835d8f747ff881b58d5aeddc80"
-                        alt="phone" class="w-[30px] rounded p-[2px]">
-                </a>
+                <img src="img/coverpage-larg1.png" alt="portfolio cover page"
+                    class="h-full object-contain w-full mx-auto hidden md:block">
+                <img src="img/coverpage-small.png" alt="portfolio cover page"
+                    class="h-full object-contain w-full mx-auto  md:hidden">
             </div>
-            <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
-                <a href="mailto:karthickyamkk2001@gmail.com">
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png?w=740&t=st=1685365462~exp=1685366062~hmac=c3644c84cb0ff6d8fc7819d072afcc12141063e712045118bfac0d97dfc6d960"
-                        alt="gmail" class="w-[30px] rounded p-1">
-                </a>
+        </section>
+        <!-- about -->
+        <section id="about" class="container mx-auto 2xl:px-24">
+            <center class="text-2xl font-semi-bold  hide my-8">
+                <h1 class="title"><span>A</span>bout Me</h1>
+            </center>
+            <div class="xl:flex justify-center items-center text-center xl:text-start hide">
+                <h1 class="lg:text-5xl w-full text-2xl font-semibold">KARTHICK <br><span
+                        class="inline-block typed-out lg:text-5xl text-2xl font-semibold">FRONTEND <span
+                            class="text-orange-600 inline-block">ANGULAR</span> DEV</span></h1>
+                <p
+                    class="border-l-4 border-slate-200 md:border-0 text-left text-justify lg:text-2xl md:rounded-md w-full text-black font-thin bg-slate-50 py-2 px-2 mt-4 lg:mt-0 hover:bg-slate-100">
+                    To secure
+                    a position
+                    as a Frontend Developer in a
+                    dynamic and progressive organization
+                    where I can apply my technical and creative skills to help the company achieve its goal.</p>
             </div>
-            <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
-                <a href="https://wa.me/+918056179854">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png?w=740&t=st=1685365202~exp=1685365802~hmac=3dd317a14293e9fac59e02578d15c3a20f0f79bf64c739977ace577794457865"
-                        alt="WhatsApp" class="w-[30px] rounded p-1">
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- resume -->
-    <section id="resume" class="container mx-auto 2xl:px-24 hide ">
-        <center class="text-2xl font-semi-bold  my-8">
-            <h1 class="title"><span>R</span>ESUME</h1>
-        </center>
-        <div class=" px-[2px] md:px-0">
-            <h1 class="font-semibold px-6 pb-1">Education:</h1>
-            <ul class="lg:flex block gap-2 mb-6 list-disc px-6">
-                <li>Under Graduate :</li>
-                <p>DG Vaishnava Collage Chennai,<br><b>BSC </b> 2019 - 2022.</p>
-            </ul>
-            <ul class="lg:flex block gap-2 mb-6 list-disc px-6">
-                <li>HSC State board :</li>
-                <p>RMHSS Chennai, 2017 - 2019.</p>
-            </ul>
-            <ul class="lg:flex block gap-2 mb-6 list-disc px-6">
-                <li>SSLC State board :</li>
-                <p>SLMHSS Thiruvallur, 2017.</p>
-            </ul>
-            <p class="bg-red-50 p-2  rounded-lg text-red-600 font-semibold lg:w-3/4">I would like to add one more thing
-                that
-                everything what I
-                learned and practiced with my own interest, I have gain some experience through my<a href="#services"
-                    class="text-blue-600 underline bg-red-50 px-2">projects</a>Which I practiced while learning these
-                Technology's. All projects Source codes are uploaded in my <a href="https://github.com/Karthikjhonn"
-                    class="underline text-blue-500 bg-red-50">Git hub</a> I express my interest in the position of
-                Fresher <mark class=" text-black">Angular Developer, Frontend Developer, Ui/Ux designer &
-                    Developer</mark> I am excited about the opportunity, if you think that i am fit for the above
-                mentioned role kindly <a href="#contact" class="underline text-blue-500 bg-red-50">contact me</a> Thank
-                you.</p>
-        </div>
-        <div class=" py-2 text-center px-2">
-            <h1 class="py-2">Download my Resume below!<br> <a href="resume/karthick12.pdf.pdf"
-                    class="text-black underline decoration-1 drop-shadow-xl border border-black px-3 py-2 hover:translate-y-px hover:bg-gradient-to-br from-orange-500 via-amber-500 to-orange-500 hover:text-white transition-all hover:border-white lg:text-2xl block my-4 rounded-md">Download</a>
-            </h1>
-        </div>
-    </section>
-    <!-- skills -->
-    <section id="skills">
-        <center class="text-2xl font-semi-bold   hide my-8">
-            <h1 class="title"><span>S</span>KILLS</h1>
-        </center>
-        <ul
-            class="mx-auto md:flex md:flex-wrap md:gap-10 md:justify-around md:items-center max-w-2xl grid grid-cols-2 gap-4 px-1 hide py-10">
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                HTML5</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                CSS3</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                BOOTSTRAP5</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                TAILWINDS CSS</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                JAVASCRIPT</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                JQUERY</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                REST API</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                ANGULAR15</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                JAVA</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                NODE JS</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                EXPRESS JS</li>
-            <li
-                class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                GIT & GITHUB</li>
-            <li
-                class="text-center border-l-4  border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                MY SQL</li>
-            <li
-                class="text-center uppercase border-l-4  border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                Figma</li>
-            <li
-                class=" col-span-2 uppercase border-l-4 lg:border lg:rounded text-center border-[#334756] px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
-                Adobe Photoshop</li>
-        </ul>
-        <div class=" container mx-auto xl:px-28 pt-12 max-w-5xl px-2 hide">
-            <ul class="grid gap-x-2 gap-y-4 md:grid-cols-2 ">
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[96%] bg-orange-400 inline-block px-2 rounded-3xl font-semibold text-orange-200">HTML5</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[88%] bg-stone-500 inline-block px-2 rounded-3xl font-semibold text-stone-300">Css3</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[90%] bg-sky-200 inline-block px-2 rounded-3xl font-semibold text-sky-500">Tailwinds</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[90%] bg-[#C780FA] inline-block px-2 rounded-3xl font-semibold text-indigo-50">Bootstrap5</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[92%] bg-yellow-400 inline-block px-2 rounded-3xl font-semibold text-black">JavaScript</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[86%] bg-red-500 inline-block px-2 rounded-3xl font-semibold text-red-100">ANGULAR15</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[91%] bg-cyan-600 inline-block px-2 rounded-3xl font-semibold text-cyan-50">TypeScript</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span
-                        class="w-[75%] bg-[#1D267D] inline-block px-2 rounded-3xl font-semibold text-cyan-50">Java</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span class="w-[79%] bg-green-400 inline-block px-2 rounded-3xl font-semibold text-green-100">Node
-                        Js</span>
-                </li>
-                <li
-                    class=" hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px]">
-                    <span class="w-[91%] bg-[#C1D0B5] inline-block px-2 rounded-3xl font-semibold text-stone-100">My
-                        SQL</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- figma  -->
-    <section id="Figma" class="container mx-auto 2xl:px-24 hide lg:hidden">
-        <center class="text-2xl font-semi-bold mb-4">
-            <h1 class="title"><span>F</span>IGMA</h1>
-        </center>
-
-        <p class="bg-slate-50 inline-block p-2 text-black  mx-1 text-center rounded-lg">This portfolio Ui/UserInterface
-            is Designed with<b> FIGMA
-            </b>tool
-            and all
-            the
-            image what used in this site made with FIGMA. <a href="figma.html" class="text-blue-500">image
-                preview</a></p>
-
-    </section>
-    <!-- Services /project-->
-    <section id="services" class="container mx-auto 2xl:px-24 hide">
-        <center class="text-2xl font-semi-bold  my-8 ">
-            <h1 class="title"><span>P</span>ROJECTS</h1>
-        </center>
-        <div class="py-4">
-            <div class="carousel" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
-                <!--item - 1-->
-                <div class="carousel-item active">
-                    <div
-                        class="w-full h-full   mx-auto  pb-4 border border-grey-400 rounded shadow-lg overflow-hidden overflow-hidden ">
-                        <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank">
-                            <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
-                                src="/img/MacBook Air - 4.jpg" alt="imgAlt">
-                            <div class="mt-2 px-2">
-                                <span
-                                    class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Ticket
-                                    BookingApplication</span>
-                                <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
-                                    <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank"
-                                        class="hover:underline">A NEW Year Music CONCERT TICKET BOOKING APPLICATION</a>
-                                </div>
-                                <div class="flex gap-2 pt-1 items-center">
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item - 2-->
-                <div class="carousel-item ">
-                    <div class=" w-full mx-auto pb-4 border border-grey-900 rounded shadow-lg overflow-hidden">
-                        <a href="https://superlative-dango-ef7208.netlify.app" target="_blank">
-                            <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
-                                src="img/MacBook Air - 5.jpg" alt="imgAlt">
-                            <div class="mt-0 px-1">
-                                <span
-                                    class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">create
-                                    Read Update Delete</span>
-                                <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
-                                    <a href="https://superlative-dango-ef7208.netlify.app" target="_blank"
-                                        class="hover:underline">ANGULAR CRUD operation</a>
-                                </div>
-                                <div class="flex md:gap-2 pt-1  gap-1 flex-wrap items-center">
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-red-600 px-1 rounded-xl">ANGULAR</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-cyan-600 px-1 rounded-xl">TYPESCRIPT</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item - 3-->
-                <div class="carousel-item ">
-                    <div class="w-full mx-auto pb-4 border border-grey-400 rounded shadow-lg overflow-hidden">
-                        <a href="https://velvety-souffle-f0d16a.netlify.app" target="_blank">
-                            <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
-                                src="img/MacBook Air - 6.jpg" alt="imgAlt">
-                            <div class="mt-0 px-1">
-                                <span
-                                    class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Angular
-                                    material clone SPA</span>
-                                <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
-                                    <a href="https://velvety-souffle-f0d16a.netlify.app" target="_blank"
-                                        class="hover:underline">The official Angular material clone SPA </a>
-                                </div>
-                                <div class="flex md:gap-2 gap-1 flex-wrap pt-1 items-center">
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-red-600 px-1 rounded-xl">ANGULAR</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-cyan-600 px-1 rounded-xl">TYPESCRIPT</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item - 4-->
-                <div class="carousel-item ">
-                    <div class="w-full mx-auto pb-4 border border-grey-900 rounded shadow-lg overflow-hidden">
-                        <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank">
-                            <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
-                                src="img/MacBook Air - 3.jpg" alt="imgAlt">
-                            <div class="mt-0 px-1">
-                                <span class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">A
-                                    Gaming
-                                    Play Store </span>
-                                <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
-                                    <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank"
-                                        class="hover:underline">Game downloading Play Store</a>
-                                </div>
-                                <div class="flex gap-2 pt-1 items-center">
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-[#C780FA] px-1 rounded-xl">BOOTSTRAP5</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item - 5-->
-                <div class="carousel-item">
-                    <div class="w-full mx-auto pb-4 border border-grey-400 rounded shadow-lg overflow-hidden">
-                        <a href="https://magical-macaron-d731e6.netlify.app" target="_blank">
-                            <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
-                                src="img/MacBook Air - 2.jpg" alt="imgAlt">
-                            <div class="mt-0 px-1">
-                                <span
-                                    class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Photography
-                                    Contest</span>
-                                <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
-                                    <a href="https://magical-macaron-d731e6.netlify.app" target="_blank"
-                                        class="hover:underline">A Photography contest multi static page Application</a>
-                                </div>
-                                <div class="flex gap-2 pt-1 items-center">
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JavaScript</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-[#C780FA] px-1 rounded-xl">BOOTSTRAP5
-                                        </class=>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--item - 6-->
-                <div class="carousel-item ">
-                    <div class=" w-full mx-auto pb-6 border border-grey-900 rounded shadow-lg overflow-hidden">
-                        <a href="https://sprightly-beijinho-e2fa46.netlify.app" target="_blank">
-                            <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
-                                src="img/MacBook Air - 1.jpg" alt="imgAlt">
-                            <div class="mt-0 px-1">
-                                <span
-                                    class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Daily
-                                    coffee
-                                    shop</span>
-                                <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
-                                    <a href="https://sprightly-beijinho-e2fa46.netlify.app" target="_blank"
-                                        class="hover:underline">Daily coffee</a>
-                                </div>
-                                <div class="flex gap-2 pt-1 items-center">
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
-                                    <span
-                                        class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JavaScript</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- buttons controls  -->
-                <button class="prev" onclick="prevSlide()">&#10094;</button>
-                <button class="next" onclick="nextSlide()">&#10095;</button>
-            </div>
-        </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="container mx-auto 2xl:px-24 hide">
-        <center class="text-2xl font-semi-bold my-8">
-            <h1 class="title"><span>C</span>ONTACT Me</h1>
-        </center>
-        <div class="lg:flex lg:justify-center lg:gap-96 lg:items-center px-4 md:px-0">
-            <div>
-                <ul class="my-8  hover:translate-x-1 ease-in duration-200">
-                    <a href="tel:8056179854" class="underline text-blue-600 flex gap-2 text-xl items-center">
-                        <li class="bg-orange-500  rounded-sm p-[5px]">
-                            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png?w=740&t=st=1685365616~exp=1685366216~hmac=2fdaa5b591f6e0081421b9a3e628220b606703835d8f747ff881b58d5aeddc80"
-                                alt="phone" class="w-[35px]  bg-black px-1 py-1 ">
-                        </li>91+xxxxxxx
-                    </a>
-                </ul>
-                <ul class="my-8 hover:translate-x-1 ease-in duration-200">
-                    <a href="https://wa.me/+918056179854"
-                        class="underline text-blue-600 flex gap-2 text-xl items-center">
-                        <li class="bg-orange-500 rounded-sm p-[5px]"><img
-                                src="https://cdn-icons-png.flaticon.com/512/733/733585.png?w=740&t=st=1685366704~exp=1685367304~hmac=7e7a7c1eb8162e59e0d5de33bdfb578a464eb8c0ae91318861ff1ef61735898e"
-                                alt="WhatsApp" class="w-[35px]  bg-black px-1 py-1"></li>91+xxxxxxx
-                    </a>
-                </ul>
-                <ul class="my-8  hover:translate-x-1 ease-in duration-200">
-                    <a href="mailto:karthickyamkk2001@gmail.com"
-                        class="text-blue-600 flex underline gap-2 text-xl items-center">
-                        <li class="bg-orange-500 rounded-sm p-[5px]"><img
-                                src="https://cdn-icons-png.flaticon.com/512/732/732200.png?w=740&t=st=1685365462~exp=1685366062~hmac=c3644c84cb0ff6d8fc7819d072afcc12141063e712045118bfac0d97dfc6d960"
-                                alt="Gmail" class="w-[35px]  bg-black px-1 py-[2px]"></li>kar********@gmail.com
-                    </a>
-                </ul>
-                <ul class="my-8  hover:translate-x-1 ease-in duration-200">
-                    <a href="https://github.com/Karthikjhonn"
-                        class="text-blue-600 flex underline gap-2 text-xl items-center">
-                        <li class="bg-orange-500 rounded-sm p-[5px]"><img
-                                src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
-                                alt="Github" class="w-[35px]  bg-black px-1 py-[1px] rounded"></li>GitHub
-                    </a>
-                </ul>
-            </div>
-            <!-- <h1 class="text-6xl text-slate-100 px-2">Feel Free To Ca!!</h1> -->
-            <div
-                class="max-w-[200px] bg-orange-500 p-2 lg:block hidden transition ease-in hover:scale-110 duration-300">
-                <img src="img/wa.me.png" class="w-full" alt="WhatsApp Qr code">
-            </div>
-        </div>
-        <div class="text-center px-1">
-            <p
-                class="bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 inline-block px-8 py-4 my-4 rounded-md text-[14px] text-black text-center ">
-                Thank you for visiting my
-                portfolio, <br> I
-                look forward
-                to the opportunity to work with you and contribute to creating exceptional digital experiences.
+            <p class="text-justify text-lg px-2 xl:px-0 lg:pt-16 py-8 lg:py-0 text-black-200 hide">
+                Hi there,<br> Welcome to my portfolio! I am <span class="px-1 font-semibold">KARTHICK</span> a
+                passionate
+                frontend
+                developer with a keen eye for
+                design and a strong proficiency for creating engaging user experiences. With a solid foundation in <b>
+                    HTML,
+                    CSS,Tailwindcss and JavaScript, Angular Framework, </b> specialize in crafting clean, responsive,
+                and
+                Work closely with UX
+                designers to create visually appealing and intuitive user interfaces, ranging from simple static
+                websites to complex web applications and single page application.Within my portfolio, you will
+                find a collection of <a href="#services" class="text-blue-600 underline">projects</a> that highlight my
+                expertise in frontend development. From responsive layouts to interactive components, each project
+                showcases my attention to detail and commitment to delivering exceptional results.<br>Proficiency in<b
+                    class="rounded-[2px] mx-1 bg-red-50 text-red-500"> ANGULAR </b>that involved developing dynamic web
+                SPA
+                applications using Angular. I am well-versed in Angular concepts, such as components, modules, services,
+                and
+                routing, reactive module form, directives, HTTP client & observables<mark>.</mark>
             </p>
+        </section>
+        <!-- sticky bar -->
+        <div id="stickybar"
+            class="bg-orange-500 text-white inline-block px-2 py-2 fixed z-[450] right-[-250px]  duration-700 top-[40%]">
+            <div class="flex-col bg-orange-500">
+                <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
+                    <a href="tel:8056179854">
+                        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png?w=740&t=st=1685365616~exp=1685366216~hmac=2fdaa5b591f6e0081421b9a3e628220b606703835d8f747ff881b58d5aeddc80"
+                            alt="phone" class="w-[30px] rounded p-[2px]">
+                    </a>
+                </div>
+                <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
+                    <a href="mailto:karthickyamkk2001@gmail.com">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png?w=740&t=st=1685365462~exp=1685366062~hmac=c3644c84cb0ff6d8fc7819d072afcc12141063e712045118bfac0d97dfc6d960"
+                            alt="gmail" class="w-[30px] rounded p-1">
+                    </a>
+                </div>
+                <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
+                    <a href="https://wa.me/+918056179854">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png?w=740&t=st=1685365202~exp=1685365802~hmac=3dd317a14293e9fac59e02578d15c3a20f0f79bf64c739977ace577794457865"
+                            alt="WhatsApp" class="w-[30px] rounded p-1">
+                    </a>
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- footer -->
-    <footer class="bg-black text-white p-4">
-        <p class="flex justify-end items-center hover:underline text-sm"><a href="#">Back To Top</a> &#8593;</p>
-        <p class="bg- text-center py-4">All &#xa9; copyrights received Designed & Developed by <a
-                href="https://github.com/Karthikjhonn" class="bg- text-blue-600 underline">Karthik</a>
-        </p>
-    </footer>
+        <!-- resume -->
+        <section id="resume" class="container mx-auto 2xl:px-24 hide ">
+            <center class="text-2xl font-semi-bold  my-8">
+                <h1 class="title"><span>R</span>ESUME</h1>
+            </center>
+            <div class=" px-[2px] md:px-0">
+                <h1 class="font-semibold px-6 pb-1">Education:</h1>
+                <ul class="lg:flex block gap-2 mb-6 list-disc px-6">
+                    <li>Under Graduate :</li>
+                    <p>DG Vaishnava Collage Chennai,<br><b>BSC </b> 2019 - 2022.</p>
+                </ul>
+                <ul class="lg:flex block gap-2 mb-6 list-disc px-6">
+                    <li>HSC State board :</li>
+                    <p>RMHSS Chennai, 2017 - 2019.</p>
+                </ul>
+                <ul class="lg:flex block gap-2 mb-6 list-disc px-6">
+                    <li>SSLC State board :</li>
+                    <p>SLMHSS Thiruvallur, 2017.</p>
+                </ul>
+                <p class="bg-red-50 p-2 text-justify rounded-lg text-red-600 font-semibold lg:w-3/4">I would like to add
+                    one more thing
+                    that
+                    everything what I
+                    learned and practiced with my own interest, I have gain some experience through my<a
+                        href="#services" class="text-blue-600 underline bg-red-50 px-2">projects</a>Which I practiced
+                    while learning these
+                    Technology's. All projects Source codes are uploaded in my <a href="https://github.com/Karthikjhonn"
+                        class="underline text-blue-500 bg-red-50">Git hub</a> I express my interest in the position of
+                    Fresher <mark class=" text-black">Angular Developer, Frontend Developer, Ui/Ux designer &
+                        Developer</mark> I am excited about the opportunity, if you think that i am fit for the above
+                    mentioned role kindly <a href="#contact" class="underline text-blue-500 bg-red-50">contact me</a>
+                    Thank
+                    you.</p>
+            </div>
+            <div class=" py-2 text-center px-2">
+                <h1 class="py-2">Download my Resume below!<br> <a href="resume/karthick12.pdf.pdf"
+                        class=" underline decoration-1 drop-shadow-xl border border-orange-500 px-3 py-2 hover:translate-y-px hover:bg-gradient-to-br from-orange-500 via-amber-500 to-orange-500 hover:text-white transition-all hover:border-black lg:text-2xl block my-4 rounded-md">Download
+                        CV</a>
+                </h1>
+            </div>
+        </section>
+        <!-- skills -->
+        <section id="skills">
+            <center class="text-2xl font-semi-bold   hide my-8">
+                <h1 class="title"><span>S</span>KILLS</h1>
+            </center>
+            <ul
+                class="mx-auto md:flex md:flex-wrap md:gap-10 md:justify-around md:items-center max-w-2xl grid grid-cols-2 gap-4 px-1 hide py-10">
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    HTML5</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    CSS3</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    BOOTSTRAP5</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    TAILWINDS CSS</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    JAVASCRIPT</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    JQUERY</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    REST API</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    ANGULAR15</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    JAVA</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    NODE JS</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    EXPRESS JS</li>
+                <li
+                    class="text-center border-l-4 border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    GIT & GITHUB</li>
+                <li
+                    class="text-center border-l-4  border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    MY SQL</li>
+                <li
+                    class="text-center uppercase border-l-4  border-[#334756] lg:border lg:rounded px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    Figma</li>
+                <li
+                    class=" col-span-2 uppercase border-l-4 lg:border lg:rounded text-center border-[#334756] px-4 py-2  hover:bg-[#334756] hover:text-white transition shadow-xl hover:translate-y-1 ease-in duration-[.1s]">
+                    Adobe Photoshop</li>
+            </ul>
+            <div
+                class="flex flex-wrap lg:grid lg:grid-cols-3 items-start justify-center gap-6 xl:gap-20 container mx-auto xl:px-28 px-1 pt-12">
+
+                <div class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify">
+                    <h1 class="text-black xl:text-3xl text-xl font-semibold">Frontend <br> development</h1>
+                    <p class="py-2 text-slate-600">Frontend development I love bringing designs to life and creating
+                        user-friendly interfaces. From static websites to complex web applications, I’ve got you covered
+                        with my skills in HTML, CSS, Tailwindcss, JavaScript, and Angular Framework.</p>
+                    <div
+                        class="mt-4 hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px] h-[15px]">
+                        <span
+                            class="w-[85%] bg-black text-white inline-block px-2 rounded-3xl font-light h-full">.</span>
+                    </div>
+                </div>
+
+                <div class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify">
+                    <h1 class="text-black xl:text-3xl text-xl font-semibold">Ui/Ux</h1>
+                    <p class="py-2 text-slate-600">UI/UX is the art of creating visually appealing and intuitive user
+                        interfaces that enhance the overall user experience. It involves designing and implementing
+                        interfaces that are both aesthetically pleasing and functional, ensuring that users can easily
+                        navigate and interact with the website or application.</p>
+                    <div
+                        class="mt-4 hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px] h-[15px]">
+                        <span
+                            class="w-[85%] bg-black text-white inline-block px-2 rounded-3xl font-light h-full">.</span>
+                    </div>
+                </div>
+
+                <div class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify">
+                    <h1 class="text-black xl:text-3xl text-xl font-semibold">Angular</h1>
+                    <p class="py-4 text-slate-600">Angular is a powerful JavaScript framework that allows developers
+                        like me to build dynamic and interactive web applications. With Angular, I can easily create
+                        reusable components, manage data efficiently, and provide a seamless user experience.</p>
+                    <div
+                        class="mt-4 hover:translate-y-1 ease-in duration-[.1s] border bg-neutral-200 border-grey-300 rounded-3xl text-[15px] h-[15px]">
+                        <span
+                            class="w-[75%] bg-black text-white inline-block px-2 rounded-3xl font-light h-full">.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- figma  -->
+        <section id="Figma" class="container mx-auto 2xl:px-24 hide lg:hidden">
+            <center class="text-2xl font-semi-bold mb-4">
+                <h1 class="title"><span>F</span>IGMA</h1>
+            </center>
+
+            <p class="bg-slate-50 inline-block p-2 text-black  mx-1 text-center rounded-lg">This portfolio
+                Ui/UserInterface
+                is Designed with<b> FIGMA
+                </b>tool
+                and all
+                the
+                image what used in this site made with FIGMA. <a href="figma.html" class="text-blue-500">image
+                    preview</a></p>
+
+        </section>
+        <!-- Services /project-->
+        <section id="services" class="container mx-auto 2xl:px-24 hide">
+            <center class="text-2xl font-semi-bold  my-8 ">
+                <h1 class="title"><span>P</span>ROJECTS</h1>
+            </center>
+            <div class="py-4">
+                <div class="carousel" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
+                    <!--item - 1-->
+                    <div class="carousel-item active">
+                        <div
+                            class="w-full h-full   mx-auto  pb-4 border border-grey-400 rounded shadow-lg overflow-hidden overflow-hidden ">
+                            <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank">
+                                <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
+                                    src="/img/MacBook Air - 4.jpg" alt="imgAlt">
+                                <div class="mt-2 px-2">
+                                    <span
+                                        class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Ticket
+                                        BookingApplication</span>
+                                    <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
+                                        <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank"
+                                            class="hover:underline">A NEW Year Music CONCERT TICKET BOOKING
+                                            APPLICATION</a>
+                                    </div>
+                                    <div class="flex gap-2 pt-1 items-center">
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--item - 2-->
+                    <div class="carousel-item ">
+                        <div class=" w-full mx-auto pb-4 border border-grey-900 rounded shadow-lg overflow-hidden">
+                            <a href="https://superlative-dango-ef7208.netlify.app" target="_blank">
+                                <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
+                                    src="img/MacBook Air - 5.jpg" alt="imgAlt">
+                                <div class="mt-0 px-1">
+                                    <span
+                                        class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">create
+                                        Read Update Delete</span>
+                                    <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
+                                        <a href="https://superlative-dango-ef7208.netlify.app" target="_blank"
+                                            class="hover:underline">ANGULAR CRUD operation</a>
+                                    </div>
+                                    <div class="flex md:gap-2 pt-1  gap-1 flex-wrap items-center">
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-red-600 px-1 rounded-xl">ANGULAR</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-cyan-600 px-1 rounded-xl">TYPESCRIPT</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--item - 3-->
+                    <div class="carousel-item ">
+                        <div class="w-full mx-auto pb-4 border border-grey-400 rounded shadow-lg overflow-hidden">
+                            <a href="https://velvety-souffle-f0d16a.netlify.app" target="_blank">
+                                <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
+                                    src="img/MacBook Air - 6.jpg" alt="imgAlt">
+                                <div class="mt-0 px-1">
+                                    <span
+                                        class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Angular
+                                        material clone SPA</span>
+                                    <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
+                                        <a href="https://velvety-souffle-f0d16a.netlify.app" target="_blank"
+                                            class="hover:underline">The official Angular material clone SPA </a>
+                                    </div>
+                                    <div class="flex md:gap-2 gap-1 flex-wrap pt-1 items-center">
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-red-600 px-1 rounded-xl">ANGULAR</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-cyan-600 px-1 rounded-xl">TYPESCRIPT</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--item - 4-->
+                    <div class="carousel-item ">
+                        <div class="w-full mx-auto pb-4 border border-grey-900 rounded shadow-lg overflow-hidden">
+                            <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank">
+                                <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
+                                    src="img/MacBook Air - 3.jpg" alt="imgAlt">
+                                <div class="mt-0 px-1">
+                                    <span
+                                        class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">A
+                                        Gaming
+                                        Play Store </span>
+                                    <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
+                                        <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank"
+                                            class="hover:underline">Game downloading Play Store</a>
+                                    </div>
+                                    <div class="flex gap-2 pt-1 items-center">
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-[#C780FA] px-1 rounded-xl">BOOTSTRAP5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--item - 5-->
+                    <div class="carousel-item">
+                        <div class="w-full mx-auto pb-4 border border-grey-400 rounded shadow-lg overflow-hidden">
+                            <a href="https://magical-macaron-d731e6.netlify.app" target="_blank">
+                                <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
+                                    src="img/MacBook Air - 2.jpg" alt="imgAlt">
+                                <div class="mt-0 px-1">
+                                    <span
+                                        class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Photography
+                                        Contest</span>
+                                    <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
+                                        <a href="https://magical-macaron-d731e6.netlify.app" target="_blank"
+                                            class="hover:underline">A Photography contest multi static page
+                                            Application</a>
+                                    </div>
+                                    <div class="flex gap-2 pt-1 items-center">
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JavaScript</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-[#C780FA] px-1 rounded-xl">BOOTSTRAP5
+                                            </class=>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--item - 6-->
+                    <div class="carousel-item ">
+                        <div class=" w-full mx-auto pb-6 border border-grey-900 rounded shadow-lg overflow-hidden">
+                            <a href="https://sprightly-beijinho-e2fa46.netlify.app" target="_blank">
+                                <img class="rounded w-full hover:scale-[1.02] transistion-all duration-300 ease"
+                                    src="img/MacBook Air - 1.jpg" alt="imgAlt">
+                                <div class="mt-0 px-1">
+                                    <span
+                                        class="text-xs text-white uppercase font-bold tracking-wider bg-red-600 px-2">Daily
+                                        coffee
+                                        shop</span>
+                                    <div class="font-bold hover:text-blue-700 text-slate-700 leading-snug">
+                                        <a href="https://sprightly-beijinho-e2fa46.netlify.app" target="_blank"
+                                            class="hover:underline">Daily coffee</a>
+                                    </div>
+                                    <div class="flex gap-2 pt-1 items-center">
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
+                                        <span
+                                            class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JavaScript</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- buttons controls  -->
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="container mx-auto 2xl:px-24 hide">
+            <center class="text-2xl font-semi-bold my-8">
+                <h1 class="title"><span>C</span>ONTACT Me</h1>
+            </center>
+            <div class="lg:flex lg:justify-center lg:gap-96 lg:items-center px-4 md:px-0">
+                <div>
+                    <ul class="my-8  hover:translate-x-1 ease-in duration-200">
+                        <a href="tel:8056179854" class="underline text-blue-600 flex gap-2 text-xl items-center">
+                            <li class="bg-orange-500  rounded-sm p-[5px]">
+                                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png?w=740&t=st=1685365616~exp=1685366216~hmac=2fdaa5b591f6e0081421b9a3e628220b606703835d8f747ff881b58d5aeddc80"
+                                    alt="phone" class="w-[35px]  bg-black px-1 py-1 ">
+                            </li>91+xxxxxxx
+                        </a>
+                    </ul>
+                    <ul class="my-8 hover:translate-x-1 ease-in duration-200">
+                        <a href="https://wa.me/+918056179854"
+                            class="underline text-blue-600 flex gap-2 text-xl items-center">
+                            <li class="bg-orange-500 rounded-sm p-[5px]"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/733/733585.png?w=740&t=st=1685366704~exp=1685367304~hmac=7e7a7c1eb8162e59e0d5de33bdfb578a464eb8c0ae91318861ff1ef61735898e"
+                                    alt="WhatsApp" class="w-[35px]  bg-black px-1 py-1"></li>91+xxxxxxx
+                        </a>
+                    </ul>
+                    <ul class="my-8  hover:translate-x-1 ease-in duration-200">
+                        <a href="mailto:karthickyamkk2001@gmail.com"
+                            class="text-blue-600 flex underline gap-2 text-xl items-center">
+                            <li class="bg-orange-500 rounded-sm p-[5px]"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/732/732200.png?w=740&t=st=1685365462~exp=1685366062~hmac=c3644c84cb0ff6d8fc7819d072afcc12141063e712045118bfac0d97dfc6d960"
+                                    alt="Gmail" class="w-[35px]  bg-black px-1 py-[2px]"></li>kar********@gmail.com
+                        </a>
+                    </ul>
+                    <ul class="my-8  hover:translate-x-1 ease-in duration-200">
+                        <a href="https://github.com/Karthikjhonn"
+                            class="text-blue-600 flex underline gap-2 text-xl items-center">
+                            <li class="bg-orange-500 rounded-sm p-[5px]"><img
+                                    src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
+                                    alt="Github" class="w-[35px]  bg-black px-1 py-[1px] rounded"></li>GitHub
+                        </a>
+                    </ul>
+                </div>
+                <!-- <h1 class="text-6xl text-slate-100 px-2">Feel Free To Ca!!</h1> -->
+                <div
+                    class="max-w-[200px] bg-orange-500 p-2 lg:block hidden transition ease-in hover:scale-110 duration-300">
+                    <img src="img/wa.me.png" class="w-full" alt="WhatsApp Qr code">
+                </div>
+            </div>
+            <div class="text-center px-1">
+                <p
+                    class="bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 inline-block px-8 py-4 my-4 rounded-md text-[14px] text-black text-center ">
+                    Thank you for visiting my
+                    portfolio, <br> I
+                    look forward
+                    to the opportunity to work with you and contribute to creating exceptional digital experiences.
+                </p>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="bg-black text-white p-4">
+            <p class="flex justify-end items-center hover:underline text-sm"><a href="#">Back To Top</a> &#8593;</p>
+            <p class="bg- text-center py-4">All &#xa9; copyrights received Designed & Developed by <a
+                    href="https://github.com/Karthikjhonn" class="bg- text-blue-600 underline">Karthik</a>
+            </p>
+        </footer>
     </div>
     <script src="index.js"></script>
 </body>

@@ -8,7 +8,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 section{
-    padding: 6rem 0 0 0;
+    padding: 4rem 0 0 0;
 }
 .spin{
   animation: spin 2s  infinite linear;
