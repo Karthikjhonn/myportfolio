@@ -13,14 +13,14 @@
 
 <body class="relative">
     <!-- preloader  -->
-    <div id="preloader" class=" bg-[#0D3E46] w-full h-[100vh] relative z-[2852] fixed">
+    <div id="preloader" class="hidden bg-[#0D3E46] w-full h-[100vh] relative z-[2852] fixed">
         <div
             class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex items-center flex-col justify-center gap-2  p-2">
             <img src="img/loaderpng.png" alt="loaderimagepng" class="w-[50px] spin">
             <span class=" h-[5px] bg-[#F4931E] rounded line"></span>
         </div>
     </div>
-    <div id="showPage" class="hidden">
+    <div id="showPage" class="">
         <!-- Navigation Bar  -->
         <header class="bg-gray-50 2xl:px-24">
             <div class="flex xl:container xl:mx-auto justify-between items-center p-4 w-full bg-gray-50">
@@ -71,8 +71,7 @@
                                     <button onclick="darkMode()"
                                         class="bg-[#0D3E46] text-black hover:scale-110 duration-100 rounded border border-slate-200 px-6 py-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="2.5" stroke="white"
-                                            class="w-8 h-8 p-1 rounded-full mx-auto">
+                                            stroke-width="2.5" stroke="white" class="w-8 h-8 p-1 rounded-full mx-auto">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                                         </svg></button>
@@ -120,6 +119,33 @@
         <!-- cover page  -->
         <section class="p-0 h-[90vh] hide">
             <div class="w-full h-full mx-auto !bg-[#0D3E46] relative overflow-hidden">
+                <!-- Animations  -->
+                <!-- <div class="absolute  top-0 left-0 w-full h-[100vh] ">
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute bottom-[0%] left-[85px] bg-[#F4931E] w-[50px] h-[50px] lg:w-[150px] lg:h-[150px] rounded-full ">
+                    </div>
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute top-[42%] left-[80%] bg-[#9ECA9B] w-[75px] h-[75px] lg:w-[110px] lg:h-[110px] rounded-full ">
+                    </div>
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute top-[36px] right-[36px] bg-[#F4931E] w-[69px] h-[69px]  rounded-full ">
+                    </div>
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute bottom-[8%] left-[50%] bg-[#9ECA9B] w-[56px] h-[56px] lg:w-[115px] lg:h-[115px] rounded-full ">
+                    </div>
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute top-[50%] right-[55%] bg-[#F4931E] w-[80px] h-[80px]  rounded-full ">
+                    </div>
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute bottom-[50%] left-[114px] bg-[#9ECA9B] w-[20px] h-[20px] lg:w-[90px] lg:h-[90px] rounded-full ">
+                    </div>
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute top-[0px] left-[120px] bg-[#F4931E] w-[36px] h-[36px] lg:w-[180px] lg:h-[180px] rounded-full ">
+                    </div>
+                    <div
+                        class="zoom shadoe-lg opacity-25 absolute top-[0px] left-[60%] bg-[#F4931E] w-[36px] h-[36px] lg:w-[140px] lg:h-[140px] rounded-full ">
+                    </div>
+                </div> -->
                 <!-- Name/text  -->
                 <div
                     class="text-white text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] inline-block  relative">
@@ -155,22 +181,28 @@
                         class="lg:hidden w-full h-full object-cover opacity-25">
                 </div>
                 <!-- email address  -->
-                <div class="flex items-center gap-5 text-white text-[10px] absolute px-2 bottom-0 left-0 lg:bottom-[2%] lg:left-[140px]">
+                <div
+                    class="flex items-center gap-5 text-white text-[10px] absolute px-2 bottom-0 left-0 lg:bottom-[2%] lg:left-[140px]">
                     <h1>@_karthick</h1>
                     <div class="flex gap-1 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-3 h-3">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="white" class="w-3 h-3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
                         <h1>karthickyamkk2001@gmail.com</h1>
                     </div>
                     <div class="flex gap-1 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-3 h-3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-                      </svg>
-                    <h1>Figma</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="white" class="w-3 h-3">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                        </svg>
+                        <h1>Figma</h1>
                     </div>
 
                 </div>
+
 
             </div>
         </section>
@@ -272,7 +304,7 @@
                     you.</p>
             </div>
             <div class=" py-2 text-center px-2">
-                <h1 class="py-2">Download my Resume below!<br> <a href="resume/karthick12.pdf.pdf"
+                <h1 class="py-2">Download my Resume below!<br> <a href="resume/karthick 14.pdf.pdf"
                         class="lg:text-blue-700 underline decoration-1 drop-shadow-xl lg:border lg:bg-white lg:border-orange-500 px-3 py-2 hover:translate-y-px lg:hover:bg-gradient-to-br from-[#F4931E] via-amber-600 to-orange-600 lg:hover:text-white transition-all lg:text-2xl block my-4 rounded-md text-white bg-[#0D3E46] hover:bg-white hover:text-black">Download
                         CV</a>
                 </h1>
@@ -624,7 +656,8 @@
                 </div>
             </div>
             <div class="text-center px-1">
-                <p class="bg-gradient-to-r from-[#D0F5BE] via-[#C3EDC0]  to-[#9ECA9B] inline-block px-8 py-4 my-4 rounded-md text-[14px] text-[#0D3E46] text-center ">
+                <p
+                    class="bg-gradient-to-r from-[#D0F5BE] via-[#C3EDC0]  to-[#9ECA9B] inline-block px-8 py-4 my-4 rounded-md text-[14px] text-[#0D3E46] text-center ">
                     Thank you for visiting my
                     portfolio, <br> I
                     look forward
@@ -639,6 +672,8 @@
                     href="https://github.com/Karthikjhonn" class="bg- text-blue-600 underline">Karthik</a>
             </p>
         </footer>
+        <!-- <div class=" zoom  m-[40px] bg-[#F4931E] w-[50px] h-[50px] lg:w-[150px] lg:h-[150px] rounded-full "></div> -->
+
     </div>
     <script src="index.js"></script>
 </body>

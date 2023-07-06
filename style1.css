@@ -38,6 +38,20 @@ section{
   75%  {width:75%;}
   100% {width:100%;}
 }
+/* blink 
+.zoom{
+  animation: zoom 3s infinite  linear;
+}
+
+@keyframes zoom {
+  0%   {transform: scale(0%);opacity:0;}
+  25%  {transform: scale(random(0,25%))  ;opacity:.3;}
+  50%  {transform: scale(random(0,50%))  ;opacity:.5;}
+  75%  {transform: scale(random(0,75%))  ;opacity:.7;}
+  100% {transform: scale(random(0,105%)) ;opacity:1;}
+
+} */
+
 header{
     position: sticky;
     top:0;
