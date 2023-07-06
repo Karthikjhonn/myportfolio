@@ -13,13 +13,14 @@
 
 <body class="relative">
     <!-- preloader  -->
-    <div id="preloader" class="bg-[#FFD80D] w-full h-[100vh] relative z-[2852] fixed">
-        <div class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex items-center flex-col justify-center gap-2  p-2">
+    <div id="preloader" class="hidden bg-[#0D3E46] w-full h-[100vh] relative z-[2852] fixed">
+        <div
+            class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex items-center flex-col justify-center gap-2  p-2">
             <img src="img/loaderpng.png" alt="loaderimagepng" class="w-[50px] spin">
-           <span class=" h-[5px] bg-black rounded line"></span>
-        </div>      
+            <span class=" h-[5px] bg-[#F4931E] rounded line"></span>
+        </div>
     </div>
-    <div id="showPage" class="hidden">
+    <div id="showPage" class="">
         <!-- Navigation Bar  -->
         <header class="bg-gray-50 2xl:px-24">
             <div class="flex xl:container xl:mx-auto justify-between items-center p-4 w-full bg-gray-50">
@@ -29,6 +30,7 @@
                         <img src="img/logo.png" alt="logo" class="w-full h-full object-contain">
                     </div>
                 </a>
+                <!-- links  -->
                 <div class="flex items-center">
                     <!-- nav links  -->
                     <nav class="bg-gray-50">
@@ -67,19 +69,19 @@
                                 class="px-4 py-1 bg-gray-50 block text-black hover:translate-y-[1px] hover:text-orange-400 hover:underline">
                                 <div class="bg-gray-50 flex justify-end items-center gap-4">
                                     <button onclick="darkMode()"
-                                        class="text-black hover:scale-110 duration-100 rounded border border-slate-200 px-6 py-1">
+                                        class="bg-[#0D3E46] text-black hover:scale-110 duration-100 rounded border border-slate-200 px-6 py-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="2.5" stroke="currentColor"
+                                            stroke-width="2.5" stroke="white"
                                             class="w-8 h-8 p-1 rounded-full mx-auto">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                                         </svg></button>
                                     <a href="https://github.com/Karthikjhonn" class="hover:scale-110 duration-100 ">
-                                        <button class=" rounded border border-slate-200 px-6 py-1 ">
+                                        <button class="bg-[#0D3E46] rounded border border-slate-200 px-6 py-1 ">
                                             <img src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
                                                 class="w-[30px] rounded-full mx-auto" alt="GitHub">
                                         </button></a>
-                                        <a class="text-white px-2 py-2 block bg-orange-500 rounded hover:scale-110 duration-100"
+                                    <a class="text-white px-2 py-2 block bg-orange-500 rounded hover:scale-110 duration-100"
                                         href="#contact">Hire Me</a>
                                 </div>
                             </li>
@@ -100,7 +102,7 @@
                                     <img src="https://tse3.mm.bing.net/th?id=OIP.ckeUFk-yid0vfWnd56w7wAHaHa&pid=Api&P=0&h=180"
                                         class="w-[25px] rounded-full " alt="GitHub">
                                 </button></a>
-                                <a class="text-white px-2 py-2 block bg-orange-500 rounded hover:scale-110 duration-100"
+                            <a class="text-white px-2 py-2 block bg-orange-500 rounded hover:scale-110 duration-100"
                                 href="#contact">Hire Me</a>
                         </div>
                     </div>
@@ -117,13 +119,59 @@
         </header>
         <!-- cover page  -->
         <section class="p-0 h-[90vh] hide">
-            <div class="w-full h-full mx-auto !bg-[#ffd80d]">
-                <!-- <img src="img/coverpagelarge.gif" alt="portfolio cover page" class="w-auto mx-auto h-full hidden md:block">
-            <img src="img/coverpagesmall.gif" alt="portfolio cover page" class="w-auto mx-auto h-full md:hidden"> -->
-                <img src="img/coverpage-larg1.png" alt="portfolio cover page"
-                    class="h-full object-contain w-full mx-auto hidden md:block">
-                <img src="img/coverpage-small.png" alt="portfolio cover page"
-                    class="h-full object-contain w-full mx-auto  md:hidden">
+            <div class="w-full h-full mx-auto !bg-[#0D3E46] relative overflow-hidden">
+                <!-- Name/text  -->
+                <div
+                    class="text-white text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] inline-block  relative">
+                    <h1 class="font-semibold text-2xl ">karthick</h1>
+                    <p class="text-medium font-light">Frontend Angular / UI designer & <br> Developer</p>
+                    <p class="text-medium text-[#F4931E] font-thin">2023</p>
+                    <!-- center circles  -->
+                    <div
+                        class="bg-[#9ECA9B]/[.1]  h-[150px] w-[150px] rounded-full absolute top-[25%] left-[25%]  translate-x-[-50%] translate-y-[-50%] ">
+                        <div
+                            class="bg-[#9ECA9B]/[.024]  h-[100px] w-[100px] rounded-full absolute top-[50%] right-[0%] translate-y-[-50%]">
+                        </div>
+                    </div>
+                </div>
+                <!-- logo  -->
+                <div class="h-[80px] w-[80px] rounded-full absolute top-[3%] left-[2%] lg:top-[5%] lg:left-[120px]"><img
+                        src="img/logo.png" class="w-full h-full object-contain" alt="cover logo png"></div>
+                <!-- bottom circle  -->
+                <div
+                    class="border border-[#9ECA9B] h-[250px] w-[250px] lg:h-[450px] lg:w-[450px] rounded-full absolute -bottom-[100px] -right-[100px] lg:-bottom-[200px] lg:-right-[200px]">
+                    <div
+                        class="border border-[#CFCFCF] h-[200px] w-[200px] lg:h-[375px] lg:w-[375px] rounded-full absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]">
+                    </div>
+                    <div
+                        class="bg-[#F4931E] h-[150px] w-[150px] lg:h-[300px] lg:w-[300px] rounded-full absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] ">
+                    </div>
+                </div>
+                <!-- grid  -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-25 ">
+                    <img src="img/coverpage grid-large.png" alt="cover page grid image"
+                        class="lg:block hidden w-full h-full object-cover opacity-25">
+                    <img src="img/coverpage grid-small-size.png" alt="cover page grid image"
+                        class="lg:hidden w-full h-full object-cover opacity-25">
+                </div>
+                <!-- email address  -->
+                <div class="flex items-center gap-5 text-white text-[10px] absolute px-2 bottom-0 left-0 lg:bottom-[2%] lg:left-[140px]">
+                    <h1>@_karthick</h1>
+                    <div class="flex gap-1 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-3 h-3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                          </svg>
+                        <h1>karthickyamkk2001@gmail.com</h1>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-3 h-3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                      </svg>
+                    <h1>Figma</h1>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <!-- about -->
@@ -134,7 +182,7 @@
             <div class="xl:flex justify-center items-center text-center xl:text-start hide">
                 <h1 class="lg:text-5xl w-full text-2xl font-semibold">KARTHICK <br><span
                         class="inline-block typed-out lg:text-5xl text-2xl font-semibold">FRONTEND <span
-                            class="text-orange-600 inline-block">ANGULAR</span> DEV</span></h1>
+                            class="text-[#F4931E] inline-block">ANGULAR</span> DEV</span></h1>
                 <p
                     class="border-l-4 border-slate-200 md:border-0 text-left text-justify lg:text-2xl md:rounded-md w-full text-black font-thin bg-slate-50 py-2 px-2 mt-4 lg:mt-0 hover:bg-slate-100">
                     To secure
@@ -167,8 +215,8 @@
         </section>
         <!-- sticky bar -->
         <div id="stickybar"
-            class="bg-orange-500 text-white inline-block px-2 py-2 fixed z-[450] right-[-250px]  duration-700 top-[40%]">
-            <div class="flex-col bg-orange-500">
+            class="bg-[#F4931E] text-white inline-block px-2 py-2 fixed z-[450] right-[-250px]  duration-700 top-[40%]">
+            <div class="flex-col bg-[#F4931E]">
                 <div class="my-4 bg-black px-[1px] py-[1px] rounded hover:scale-110 duration-100">
                     <a href="tel:8056179854">
                         <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png?w=740&t=st=1685365616~exp=1685366216~hmac=2fdaa5b591f6e0081421b9a3e628220b606703835d8f747ff881b58d5aeddc80"
@@ -225,7 +273,7 @@
             </div>
             <div class=" py-2 text-center px-2">
                 <h1 class="py-2">Download my Resume below!<br> <a href="resume/karthick12.pdf.pdf"
-                        class=" underline decoration-1 drop-shadow-xl border border-orange-500 px-3 py-2 hover:translate-y-px hover:bg-gradient-to-br from-orange-500 via-amber-500 to-orange-500 hover:text-white transition-all hover:border-black lg:text-2xl block my-4 rounded-md">Download
+                        class="lg:text-blue-700 underline decoration-1 drop-shadow-xl lg:border lg:bg-white lg:border-orange-500 px-3 py-2 hover:translate-y-px lg:hover:bg-gradient-to-br from-[#F4931E] via-amber-600 to-orange-600 lg:hover:text-white transition-all lg:text-2xl block my-4 rounded-md text-white bg-[#0D3E46] hover:bg-white hover:text-black">Download
                         CV</a>
                 </h1>
             </div>
@@ -286,7 +334,8 @@
             <div
                 class="flex flex-wrap lg:grid lg:grid-cols-3 items-start justify-center gap-6 xl:gap-20 container mx-auto xl:px-28 px-1 pt-12">
 
-                <div class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify">
+                <div
+                    class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify lg:hover:-translate-y-[10px] transition-all duration-300">
                     <h1 class="text-black xl:text-3xl text-xl font-semibold">Frontend <br> development</h1>
                     <p class="py-2 text-slate-600">Frontend development I love bringing designs to life and creating
                         user-friendly interfaces. From static websites to complex web applications, I’ve got you covered
@@ -298,7 +347,8 @@
                     </div>
                 </div>
 
-                <div class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify">
+                <div
+                    class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify lg:hover:-translate-y-[10px] transition-all duration-300">
                     <h1 class="text-black xl:text-3xl text-xl font-semibold">Ui/Ux</h1>
                     <p class="py-2 text-slate-600">UI/UX is the art of creating visually appealing and intuitive user
                         interfaces that enhance the overall user experience. It involves designing and implementing
@@ -311,7 +361,8 @@
                     </div>
                 </div>
 
-                <div class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify">
+                <div
+                    class="bg-white px-4 py-8 rounded-lg  h-80 shadow-lg text-justify lg:hover:-translate-y-[10px] transition-all duration-300">
                     <h1 class="text-black xl:text-3xl text-xl font-semibold">Angular</h1>
                     <p class="py-4 text-slate-600">Angular is a powerful JavaScript framework that allows developers
                         like me to build dynamic and interactive web applications. With Angular, I can easily create
@@ -573,8 +624,7 @@
                 </div>
             </div>
             <div class="text-center px-1">
-                <p
-                    class="bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 inline-block px-8 py-4 my-4 rounded-md text-[14px] text-black text-center ">
+                <p class="bg-gradient-to-r from-[#D0F5BE] via-[#C3EDC0]  to-[#9ECA9B] inline-block px-8 py-4 my-4 rounded-md text-[14px] text-[#0D3E46] text-center ">
                     Thank you for visiting my
                     portfolio, <br> I
                     look forward

@@ -7,6 +7,12 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Noto Sans', sans-serif;
 }
+:root{
+  --primary-col:#F4931E;
+  --secondary-col:#0D3E46;
+  --gray-col:#617174;
+  --olive-col:#9ECA9B;
+}
 section{
     padding: 4rem 0 0 0;
 }
@@ -45,16 +51,17 @@ header{
   position: relative;
   font-weight: 600;
   display: inline-block !important;
+  color: var(--secondary-col);
 }
 .title span{
-  color: #ff4500;
+  color: var(--primary-col);
 }
 .title::after{
   content: "";
   position: absolute;
   top:100%;
   left: 0;
-  border: 2px solid orangered;
+  border: 2px solid var(--secondary-col);
   width: 70%;
   border-radius: 10px;
 }
@@ -76,7 +83,7 @@ mark,mark b{
 /* Type Animations */
 .typed-out{
     overflow: hidden;
-    border-right: .15em solid orangered;
+    border-right: .15em solid var(--primary-col);
     white-space: nowrap;
     animation: 
       typing 3.5s  alternate-reverse 2s infinite  forwards,
@@ -88,7 +95,7 @@ mark,mark b{
   }
 @keyframes blink {
     from { border-color: transparent }
-    to { border-color: orangered; }
+    to { border-color: var(--primary-col); }
   }
   /* carousel */
   .carousel {
