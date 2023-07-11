@@ -38,17 +38,25 @@ section{
   75%  {width:75%;}
   100% {width:100%;}
 }
-/* blink 
-.zoom{
-  animation: zoom 3s infinite  linear;
+/* cover page bubble blink animation  */
+/* .zoom{
+  animation: zoom 2s infinite  linear;
+  transition: all .5s ease;
 }
-
+.bubble>div:nth-child(odd){
+    animation-delay: 1s !important;
+    animation: zoom 2.5s infinite  linear;
+}
+.bubble>div:nth-child(even){
+  animation-delay: 1.5s !important;
+  animation: zoom 3.4s infinite  linear;
+}
 @keyframes zoom {
   0%   {transform: scale(0%);opacity:0;}
-  25%  {transform: scale(random(0,25%))  ;opacity:.3;}
-  50%  {transform: scale(random(0,50%))  ;opacity:.5;}
-  75%  {transform: scale(random(0,75%))  ;opacity:.7;}
-  100% {transform: scale(random(0,105%)) ;opacity:1;}
+  25%  {transform: scale(random(0,25%))  ;opacity:.2;transform:translateY(-10px);}
+  50%  {transform: scale(random(0,50%))  ;opacity:.4;transform:translateY(-30px); }
+  75%  {transform: scale(random(0,75%))  ;opacity:.2;transform:translateY(-50px); }
+  100% {transform: scale(random(0,105%)) ;opacity:0; transform:translateY(-80px); }
 
 } */
 
