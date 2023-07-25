@@ -51,44 +51,44 @@ const observe = new IntersectionObserver((entries) => {
 let hideEl = document.querySelectorAll(".hide");
 hideEl.forEach((el) => observe.observe(el))
 
-// carousal 
-let slideIndex = 0;
-const slides = document.querySelectorAll('.carousel .carousel-item');
+// carousal--------->
+// let slideIndex = 0;
+// const slides = document.querySelectorAll('.carousel .carousel-item');
 
-function showSlide(index) {
-  slides.forEach((slide) => {
-    slide.classList.remove('active');
-  });
-  slides[index].classList.add('active');
-}
+// function showSlide(index) {
+//   slides.forEach((slide) => {
+//     slide.classList.remove('active');
+//   });
+//   slides[index].classList.add('active');
+// }
 
-function nextSlide() {
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
-  showSlide(slideIndex);
-}
+// function nextSlide() {
+//   slideIndex++;
+//   if (slideIndex >= slides.length) {
+//     slideIndex = 0;
+//   }
+//   showSlide(slideIndex);
+// }
 
-function prevSlide() {
-  slideIndex--;
-  if (slideIndex < 0) {
-    slideIndex = slides.length - 1;
-  }
-  showSlide(slideIndex);
-}
+// function prevSlide() {
+//   slideIndex--;
+//   if (slideIndex < 0) {
+//     slideIndex = slides.length - 1;
+//   }
+//   showSlide(slideIndex);
+// }
 
-var myClearInterval;
-function mySetInterval(){
-    this.myClearInterval=setInterval(nextSlide, 2000);
-}
-mySetInterval()
-function mouseEnter(){
-    clearInterval(myClearInterval)
-}
-function mouseLeave(){
-    mySetInterval()
-}
+// var myClearInterval;
+// function mySetInterval(){
+//     this.myClearInterval=setInterval(nextSlide, 2000);
+// }
+// mySetInterval()
+// function mouseEnter(){
+//     clearInterval(myClearInterval)
+// }
+// function mouseLeave(){
+//     mySetInterval()
+// }
 
 // preloader 
 var loader = document.getElementById("preloader")
