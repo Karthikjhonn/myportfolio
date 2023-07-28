@@ -107,11 +107,9 @@
                     </div>
                     <!-- menu bar icon -->
                     <span style="cursor: pointer;" class="ease-linear lg:hidden p-4" onclick="collapse()">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="black">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="black" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>                          
                     </span>
                 </div>
             </div>
@@ -152,10 +150,12 @@
                     <div>
                         <h1 class="font-semibold text-2xl ">karthick</h1>
                         <p class="text-medium font-light">Frontend Angular / UI designer & <br> Developer</p>
-                        <p class="text-medium text-[#F4931E] font-thin">2023</p>
+                        <p class="text-medium  font-thin">2023</p>
                     </div>
                     <div>
-                        <a href="#about" class="bg-[#EEF8FA]/[.1] hover:bg-[#EEF8FA] hover:text-[#023248] text-[#EEF8FA] px-1.5 py-1.5 rounded transition-all">About me</a>
+                        <a href="#about"
+                            class="md:bg-[#9ECA9B]/[.7] md:hover:bg-[#A9DDA5] bg-[#A9DDA5] text-[#0D3E46] text-base font-thin  px-1.5 py-1.5 rounded transition-all">About
+                            me</a>
                     </div>
                     <!-- center circles  -->
                     <div
@@ -631,6 +631,48 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-auto gap-4 lg:gap-10">
                 <!-- project-1  -->
                 <div class="w-full h-full group/link relative overflow-hidden shadow hide">
+                    <a href="https://tubular-lokum-0d32f0.netlify.app/" target="_blank">
+                        <div><img src="img/MacBook Air - 6.jpg" alt="project-img"></div>
+                        <!-- content  -->
+                        <div class="py-2">
+                            <span class="text-xs text-white uppercase font-bold px-1 py-[1px] bg-red-600">Angular material clone (SPA)</span>
+                            <div class="font-bold hover:text-blue-700 text-slate-700 px-1">
+                                <a href="https://tubular-lokum-0d32f0.netlify.app/" target="_blank"
+                                    class="hover:underline">Apps Market Business Landing page.</a>
+                            </div>
+                            <div class="flex md:gap-2 pt-1  gap-1 flex-wrap items-center px-1">
+                                <span
+                                    class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
+                                <span
+                                    class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
+                                <span
+                                    class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
+                                <span
+                                    class="text-black font-semibold text-[12px] bg-red-600 px-1 rounded-xl">ANGULAR</span>
+                                <span
+                                    class="text-black font-semibold text-[12px] bg-cyan-600 px-1 rounded-xl">TYPESCRIPT</span>
+                                <span
+                                    class="text-black font-semibold text-[12px] bg-[#C780FA] px-1 rounded-xl">BOOTSTRAP5</span>
+                                <span class="text-black font-semibold text-[12px] bg-blue-600 px-1 rounded-xl">ANGULAR
+                                    MATERIAL</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- overLay -->
+                    <div
+                        class="bg-gradient-to-b from-black/50 via-[#ffbb00]/50 to-[#ffbb00]/75 hidden md:flex absolute top-0 left-0 flex justify-center items-center bg-black/50 w-full h-full translate-y-[100%] group-hover/link:translate-y-0 transition-all ">
+                        <a href="https://tubular-lokum-0d32f0.netlify.app/" target="_blank"
+                            class="border-2 border-white p-1.5 rounded-full ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                stroke="white" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- project-2  -->
+                <div class="w-full h-full group/link relative overflow-hidden shadow hide">
                     <a href="https://monumental-arithmetic-24317b.netlify.app" target="_blank">
                         <div><img src="img/MacBook Air - 4.jpg" alt="project-img"></div>
                         <!-- content  -->
@@ -665,7 +707,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- project-2  -->
+                <!-- project-3  -->
                 <div class="w-full h-full group/link relative overflow-hidden shadow hide">
                     <a href="https://superlative-dango-ef7208.netlify.app" target="_blank">
                         <div><img src="img/MacBook Air - 5.jpg" alt="project-img"></div>
@@ -675,7 +717,7 @@
                                 (SPA)</span>
                             <div class="font-bold hover:text-blue-700 text-slate-700 px-1">
                                 <a href="https://superlative-dango-ef7208.netlify.app" target="_blank"
-                                    class="hover:underline">Create Read Update Delete</a>
+                                    class="hover:underline">Angular single page application <br> (Create Read Update Delete)</a>
                             </div>
                             <div class="flex md:gap-2 pt-1  gap-1 flex-wrap items-center px-1">
                                 <span
@@ -704,43 +746,6 @@
                         </a>
                     </div>
                 </div>
-                <!-- project-3  -->
-                <div class="w-full h-full group/link relative overflow-hidden shadow hide">
-                    <a href="https://karthicktaskinnov.netlify.app/" target="_blank">
-                        <div><img src="img/MacBook Air - 6.jpg" alt="project-img"></div>
-                        <!-- content  -->
-                        <div class="py-2">
-                            <span class="text-xs text-white uppercase font-bold px-1 py-[1px] bg-red-600">Landing Page
-                                (Bootstrap)</span>
-                            <div class="font-bold hover:text-blue-700 text-slate-700 px-1">
-                                <a href="https://karthicktaskinnov.netlify.app/" target="_blank"
-                                    class="hover:underline">Apps Market Business Landing page.</a>
-                            </div>
-                            <div class="flex md:gap-2 pt-1  gap-1 flex-wrap items-center px-1">
-                                <span
-                                    class="text-black font-semibold text-[12px] bg-orange-500 px-1 rounded-xl">HTML5</span>
-                                <span
-                                    class="text-black font-semibold text-[12px] bg-neutral-400 px-1 rounded-xl">CSS3</span>
-                                <span
-                                    class="text-black font-semibold text-[12px] bg-yellow-400 px-1 rounded-xl">JAVASCRIPT</span>
-                                <span
-                                    class="text-black font-semibold text-[12px] bg-[#C780FA] px-1 rounded-xl">BOOTSTRAP5</span>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- overLay -->
-                    <div
-                        class="bg-gradient-to-b from-black/50 via-[#ffbb00]/50 to-[#ffbb00]/75 hidden md:flex absolute top-0 left-0 flex justify-center items-center bg-black/50 w-full h-full translate-y-[100%] group-hover/link:translate-y-0 transition-all ">
-                        <a href="https://karthicktaskinnov.netlify.app/" target="_blank"
-                            class="border-2 border-white p-1.5 rounded-full ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-                                stroke="white" class="w-8 h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
                 <!-- project-4  -->
                 <div class="w-full h-full group/link relative overflow-hidden shadow hide">
                     <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank">
@@ -752,8 +757,8 @@
                                 Play Store</span>
                             <div class="font-bold hover:text-blue-700 text-slate-700 px-1">
                                 <a href="https://aquamarine-daffodil-a87f40.netlify.app" target="_blank"
-                                    class="hover:underline">Game downloading Play Store
-                                    APPLICATION (BOOTSTRAP5)</a>
+                                    class="hover:underline">Gaming Play Store
+                                    static application (BOOTSTRAP5)</a>
                             </div>
                             <div class="flex gap-2 pt-1 items-center px-1">
                                 <span
@@ -828,8 +833,8 @@
                                 shop</span>
                             <div class="font-bold hover:text-blue-700 text-slate-700 px-1">
                                 <a href="https://sprightly-beijinho-e2fa46.netlify.app" target="_blank"
-                                    class="hover:underline">A Daily coffee multi page static
-                                    Application</a>
+                                    class="hover:underline">A Daily coffee web multi page static
+                                   <br> Application</a>
                             </div>
                             <div class="flex gap-2 pt-1 items-center px-1">
                                 <span

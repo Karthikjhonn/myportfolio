@@ -13,6 +13,9 @@
   --gray-col:#617174;
   --olive-col:#9ECA9B;
 }
+.cl{
+  background-color: #2f3839;
+}
 section{
     padding: 4rem 0 0 0;
 }
